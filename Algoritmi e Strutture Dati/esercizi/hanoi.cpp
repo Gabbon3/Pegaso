@@ -12,5 +12,6 @@ void hanoi(int n, int A, int C, int B) {
 }
 
 int main() {
+    cout << "Hanoi Tower" << endl;
     hanoi(3, 1, 3, 2);
 }
