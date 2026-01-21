@@ -1,13 +1,13 @@
 let testo = "";
-
+let l = 0;
 // Iteriamo su ogni lezione
 for (let lezione of domande) {
     
     // Controllo di sicurezza se la lezione non ha domande
     if (!lezione.questions || lezione.questions.length === 0) continue;
-
+    l++;
     // Titolo della Lezione (preso dalla prima domanda disponibile)
-    testo += `\n---\n## ${lezione.questions[0].titolo_videolezione}\n`;
+    testo += `\n---\n## ${l}. ${lezione.questions[0].titolo_videolezione}\n`;
 
     // 1. FIX SORTING: Ordiniamo l'array delle domande per difficoltà (crescente)
     // parseInt assicura che ordiniamo numeri e non stringhe ("10" verrebbe prima di "2")
