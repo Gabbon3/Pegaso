@@ -7,24 +7,23 @@ defineProps({
     userAnswerId: Number, // L'ID della risposta data dall'utente (se c'è)
 });
 
-// Quando l'utente clicca una risposta, avvisiamo il padre con l'ID
-defineEmits(["answer"]);
+defineEmits(["answer", "prev", "next"]);
 </script>
 
 <template>
     <div class="space-y-6">
         <div
-            class="flex justify-between items-center text-slate-400 text-sm mb-4"
+            class="flex justify-between items-center text-text-muted text-sm mb-4"
         >
             <span>Domanda {{ currentIndex + 1 }} di {{ totalQuestions }}</span>
-            <span class="bg-slate-700 px-2 py-1 rounded"
+            <span class="bg-bg-input px-2 py-1 rounded"
                 >Difficoltà: {{ question.difficolta }}</span
             >
         </div>
 
-        <div class="w-full bg-slate-700 h-2 rounded-full overflow-hidden">
+        <div class="w-full bg-bg-input h-2 rounded-full overflow-hidden">
             <div
-                class="bg-cyan-500 h-full transition-all duration-300"
+                class="bg-primary h-full transition-all duration-300"
                 :style="{
                     width: ((currentIndex + 1) / totalQuestions) * 100 + '%',
                 }"
@@ -33,7 +32,7 @@ defineEmits(["answer"]);
 
         <div class="space-y-4">
             <div
-                class="text-xl font-semibold text-white leading-relaxed"
+                class="text-xl font-semibold text-text leading-relaxed"
                 v-html="question.domandaClean"
             ></div>
 
@@ -41,7 +40,7 @@ defineEmits(["answer"]);
                 <a
                     :href="question.imageUrl"
                     target="_new"
-                    class="flex items-center gap-2 bg-slate-700 hover:bg-slate-600 text-cyan-400 border border-cyan-500/30 px-4 py-2 rounded-lg transition-all text-sm font-bold uppercase tracking-wide"
+                    class="flex items-center gap-2 bg-bg-input hover:bg-slate-600 text-cyan-400 border border-cyan-500/30 px-4 py-2 rounded-lg transition-all text-sm font-bold uppercase tracking-wide"
                 >
                     📸 Apri Immagine Esterna ↗
                 </a>
@@ -62,11 +61,33 @@ defineEmits(["answer"]);
                             userAnswerId === opzione.id &&
                             opzione.id !== question.id_risposta_corretta
                           ? 'bg-red-900/50 border-red-500 text-red-100'
-                          : 'bg-slate-700 border-transparent hover:border-cyan-500 hover:bg-slate-600 text-slate-200',
+                          : 'bg-bg-input border-transparent hover:border-primary hover:bg-bg-4 text-text',
                 ]"
             >
                 {{ opzione.testo }}
             </button>
+        </div>
+
+        <div class="flex justify-between items-center mt-8 pt-6 border-t border-border-default">
+            <button
+                @click="$emit('prev')"
+                :disabled="currentIndex === 0"
+                class="flex items-center gap-2 px-4 py-2 rounded-lg font-bold transition-all cursor-pointer
+               disabled:opacity-30 disabled:cursor-not-allowed
+               bg-bg-3 hover:bg-bg-4 text-text-4"
+            >
+            ⇦ Indietro
+            </button>
+            <button
+                @click="$emit('next')"
+                :disabled="currentIndex === totalQuestions - 1"
+                class="flex items-center gap-2 px-4 py-2 rounded-lg font-bold transition-all cursor-pointer
+               disabled:opacity-30 disabled:cursor-not-allowed
+               bg-primary-hover hover:bg-primary text-text shadow-lg hover:shadow-primary-light/20"
+            >
+            Avanti ⇨
+            </button>
+            
         </div>
     </div>
 </template>

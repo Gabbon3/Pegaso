@@ -88,6 +88,11 @@ const startQuiz = async () => {
     }
 };
 
+/**
+ * Gestisce il click su una risposta di una domanda 
+ * mostrando il risultato e avanzando alla prossima domanda
+ * @param {number} rispostaId id della risposta
+ */
 const handleAnswer = (rispostaId) => {
     if (showFeedback.value) return; 
     const isCorrect = rispostaId === currentQuestion.value.id_risposta_corretta;
@@ -105,6 +110,22 @@ const handleAnswer = (rispostaId) => {
     }, 1500);
 };
 
+/**
+ * Modifica la domanda visualizzata in QuizGame modificando l'indice
+ * @param {number} step quando andare avanti/indietro
+ */
+const changeQuestion = (step) => {
+    const newIndex = currentQuestionIndex.value + step;
+    if (newIndex < 0 || newIndex >= quizData.value.length) return;
+    currentQuestionIndex.value = newIndex;
+    const existingAnswer = userAnswers.value[newIndex];
+    if (existingAnswer !== undefined) {
+        showFeedback.value = true;
+    } else {
+        showFeedback.value = false;
+    }
+}
+
 const resetQuiz = () => {
     gameState.value = "menu";
     quizData.value = [];
@@ -113,9 +134,9 @@ const resetQuiz = () => {
 
 <template>
     <div class="min-h-screen flex items-center justify-center p-4 font-sans">
-        <div class="bg-slate-800 p-8 rounded-2xl shadow-2xl w-full max-w-2xl border border-slate-700">
+        <div class="bg-bg-card border border-border-default p-8 rounded-2xl shadow-2xl w-full max-w-2xl">
             
-            <h1 class="text-3xl font-bold text-center pb-1 mb-6 bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
+            <h1 class="text-3xl font-bold text-center pb-1 mb-6 text-primary">
                 Pegaso Quiz Trainer
             </h1>
 
@@ -139,6 +160,8 @@ const resetQuiz = () => {
                 :show-feedback="showFeedback"
                 :user-answer-id="userAnswers[currentQuestionIndex]"
                 @answer="handleAnswer"
+                @prev="changeQuestion(-1)"
+                @next="changeQuestion(1)"
             />
 
             <QuizResults 

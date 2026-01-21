@@ -51,3 +51,4 @@ def migrate_json_to_db(json_file, nome_materia):
 # Migrazioni precedenti
 # migrate_json_to_db('C:\\Users\\g2004\\Desktop\\Pegaso\\☑️ Ingegneria del Software\\quiz_ingegneria_software.json', 'Ingegneria del Software')
 # migrate_json_to_db('C:\\Users\\g2004\\Desktop\\Pegaso\\Algoritmi e Strutture Dati\\quiz_algoritmi_e_strutture_dati.json', 'Algoritmi e Strutture Dati')
+# migrate_json_to_db('C:\\Users\\g2004\\Desktop\\Pegaso\\⏳ Architettura Dei Calcolatori\\quiz_architettura_dei_calcolatori.json', 'Architettura dei Calcolatori')
