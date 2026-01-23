@@ -10,8 +10,11 @@ CREATE TABLE domanda (
     id_materia INTEGER REFERENCES materia(id) ON DELETE CASCADE,
     difficolta INTEGER CHECK (difficolta >= 1 AND difficolta <= 5),
     testo TEXT NOT NULL,
-    id_risposta_corretta INTEGER -- Sarà una FK verso risposta(id)
+    numero_lezione INTEGER not null,
+    id_risposta_corretta INTEGER
 );
+
+alter table domanda add column numero_cartella INTEGER not null default 1;
 
 -- Tabella Risposte
 CREATE TABLE risposta (
