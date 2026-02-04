@@ -1,6 +1,5 @@
 <script setup>
 import { ref, onMounted, computed } from "vue";
-import axios from "axios";
 
 // Importiamo i nostri nuovi componenti
 import QuizMenu from "./components/QuizMenu.vue";
