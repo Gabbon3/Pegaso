@@ -31,20 +31,13 @@ defineEmits(["answer", "prev", "next"]);
         </div>
 
         <div class="space-y-4">
+            <div v-if="question.imageUrl" class="flex justify-center">
+                <img :src="question.imageUrl">
+            </div>
             <div
                 class="text-xl font-semibold text-text leading-relaxed"
                 v-html="question.domandaClean"
             ></div>
-
-            <div v-if="question.imageUrl" class="flex justify-center">
-                <a
-                    :href="question.imageUrl"
-                    target="_new"
-                    class="flex items-center gap-2 bg-bg-input hover:bg-slate-600 text-cyan-400 border border-cyan-500/30 px-4 py-2 rounded-lg transition-all text-sm font-bold uppercase tracking-wide"
-                >
-                    📸 Apri Immagine Esterna ↗
-                </a>
-            </div>
         </div>
 
         <div class="space-y-3 mt-6">

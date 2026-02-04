@@ -3,6 +3,10 @@ from fastapi.middleware.cors import CORSMiddleware
 import psycopg2
 from psycopg2.extras import RealDictCursor
 from typing import List, Optional
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
 
 app = FastAPI(title="Pegaso Quiz API")
 
@@ -16,9 +20,14 @@ app.add_middleware(
 
 # Funzione per connettersi al DB
 def get_db_connection():
+    db_name = os.getenv("DB_NAME")
+    db_user = os.getenv("DB_USER")
+    db_password = os.getenv("DB_PASSWORD")
+    db_host = os.getenv("DB_HOST")
+    # ---
     return psycopg2.connect(
-        "dbname=pegaso user=postgres password=0000 host=localhost",
-        cursor_factory=RealDictCursor # Questo ci restituisce i dati come dizionari (JSON ready)
+        f"dbname={db_name} user={db_user} password={db_password} host={db_host} connect_timeout=5",
+        cursor_factory=RealDictCursor
     )
 
 # Restituisce la lista delle materie

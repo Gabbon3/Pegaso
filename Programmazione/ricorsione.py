@@ -21,15 +21,5 @@ def mcd(x, y):
     if x % y == 0:
         return y
     return mcd(y, x % y)
-    
-def hanoi(d):
-    
-    return
-
-def move_disc(num, from_peg, to_peg, temp_peg):
-    if num > 0:
-        move_disc(num - 1, from_peg, temp_peg, to_peg)
-        move_disc(num - 1, temp_peg, to_peg, from_peg)
-        
 
 main()
