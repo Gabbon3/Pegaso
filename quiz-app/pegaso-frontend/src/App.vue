@@ -6,6 +6,7 @@ import axios from "axios";
 import QuizMenu from "./components/QuizMenu.vue";
 import QuizGame from "./components/QuizGame.vue";
 import QuizResults from "./components/QuizResults.vue";
+import api from "./api";
 
 // --- STATO ---
 const gameState = ref("menu"); 
@@ -46,7 +47,7 @@ const currentQuestion = computed(() => {
 // --- API & AZIONI ---
 onMounted(async () => {
     try {
-        const response = await axios.get("http://localhost:8000/materie");
+        const response = await api.get("/materie");
         materie.value = response.data;
         if (materie.value.length > 0) config.value.materia_id = materie.value[0].id;
     } catch (err) {
@@ -67,7 +68,7 @@ const startQuiz = async () => {
         if (config.value.lezione_da) params.lezione_da = config.value.lezione_da;
         if (config.value.lezione_a) params.lezione_a = config.value.lezione_a;
 
-        const response = await axios.get("http://127.0.0.1:8000/quiz", { params });
+        const response = await api.get("/quiz", { params });
 
         if (response.data.length === 0) {
             error.value = "Nessuna domanda trovata!";
