@@ -3,7 +3,8 @@ const CONFIG = {
     courseCode: "0312512INF01NM",
     startLesson: 1,
     endLesson: 60,
-    token: "Bearer TOKEN",
+    token: "",
+    
     // --- MODALITÀ CARTELLE (NUOVA) ---
     useFolders: true,           // Metti false per usare la vecchia logica sequenziale
     targetFolders: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13],         // Elenco ID delle cartelle da scansionare
@@ -12,6 +13,33 @@ const CONFIG = {
     startLesson: 1,             // Usato solo se useFolders = false
     endLesson: 60               // Usato solo se useFolders = false
 };
+
+async function init() {
+	CONFIG.token = "Bearer " + (await cookieStore.get("pegaso_token")).value;
+}
+
+init();
+
+/**
+ * 
+ * @param {String} controlKey un codice che compare sempre uguale da recuperare dalle chiamate api medesime
+ * @param {Number} videoCurrent tempo in secondi di dove si vuole arrivare con il video 
+ */
+async function finishLesson(controlKey, videoCurrent) {
+    const url = `https://lms-api.prod.pegaso.multiversity.click/student/course/${CONFIG.courseCode}/lesson/view/send`;
+    const res = await fetch(url, {
+        method: 'POST',
+        headers: { 'Authorization': CONFIG.token, 'Accept': 'application/json' },
+        body: JSON.stringify({
+            video_current: videoCurrent,
+            course_code: CONFIG.courseCode,
+            control_key: controlKey,
+        })
+    });
+    if (!res.ok) throw new Error(`HTTP Error Meta ${res.status}`);
+    return await res.json();
+}
+
 
 // --- FUNZIONE DI DOWNLOAD ---
 function downloadData(data, filename) {

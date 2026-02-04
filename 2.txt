@@ -1,0 +1,68 @@
+Request URL
+https://lms-api.prod.pegaso.multiversity.click/student/course/0312512INF01NM/lesson/view/send
+Request Method
+POST
+Status Code
+200 OK
+Remote Address
+18.102.255.120:443
+Referrer Policy
+strict-origin-when-cross-origin
+
+access-control-allow-credentials
+true
+access-control-allow-origin
+https://lms.pegaso.multiversity.click
+access-control-expose-headers
+chatbot-support-messageid, chatbot-support-conversationid, chatbot-tutor-messageid, chatbot-tutor-sessionid
+cache-control
+no-cache, private
+content-type
+application/json
+date
+Tue, 03 Feb 2026 16:34:43 GMT
+server
+nginx/1.28.0
+vary
+Origin
+x-powered-by
+PHP/8.1.27
+
+authority
+lms-api.prod.pegaso.multiversity.click
+:method
+POST
+:path
+/student/course/0312512INF01NM/lesson/view/send
+:scheme
+https
+accept
+application/json, text/plain, */*
+accept-encoding
+gzip, deflate, br, zstd
+accept-language
+it-IT,it;q=0.9,en-US;q=0.8,en;q=0.7
+content-length
+79
+content-type
+application/json
+origin
+https://lms.pegaso.multiversity.click
+priority
+u=1, i
+referer
+https://lms.pegaso.multiversity.click/
+sec-ch-ua
+"Not(A:Brand";v="8", "Chromium";v="144", "Google Chrome";v="144"
+sec-ch-ua-mobile
+?0
+sec-ch-ua-platform
+"Windows"
+sec-fetch-dest
+empty
+sec-fetch-mode
+cors
+sec-fetch-site
+same-site
+user-agent
+Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36
