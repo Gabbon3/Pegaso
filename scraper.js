@@ -4,7 +4,7 @@ const CONFIG = {
     startLesson: 1,
     endLesson: 60,
     token: "",
-    
+
     // --- MODALITÀ CARTELLE (NUOVA) ---
     useFolders: true,           // Metti false per usare la vecchia logica sequenziale
     targetFolders: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13],         // Elenco ID delle cartelle da scansionare
@@ -15,7 +15,7 @@ const CONFIG = {
 };
 
 async function init() {
-	CONFIG.token = "Bearer " + (await cookieStore.get("pegaso_token")).value;
+    CONFIG.token = "Bearer " + (await cookieStore.get("pegaso_token")).value;
 }
 
 init();
@@ -29,7 +29,11 @@ async function finishLesson(controlKey, videoCurrent) {
     const url = `https://lms-api.prod.pegaso.multiversity.click/student/course/${CONFIG.courseCode}/lesson/view/send`;
     const res = await fetch(url, {
         method: 'POST',
-        headers: { 'Authorization': CONFIG.token, 'Accept': 'application/json' },
+        headers: { 
+            'Authorization': CONFIG.token, 
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+        },
         body: JSON.stringify({
             video_current: videoCurrent,
             course_code: CONFIG.courseCode,
@@ -43,7 +47,7 @@ async function finishLesson(controlKey, videoCurrent) {
 
 // --- FUNZIONE DI DOWNLOAD ---
 function downloadData(data, filename) {
-    const file = new Blob([JSON.stringify(data, null, 2)], {type: 'application/json'});
+    const file = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
     const a = document.createElement("a");
     const url = URL.createObjectURL(file);
     a.href = url;
@@ -60,7 +64,7 @@ async function processLessonTest(folderId, lpId, lessonTitleOverride = null) {
         // 1. GET Metadata (per trovare il testId)
         // Nota: Qui usiamo folderId nell'URL come richiesto
         const metaUrl = `https://lms-api.prod.pegaso.multiversity.click/student/course/${CONFIG.courseCode}/video-lesson/${folderId}/paragraphs/${lpId}`;
-        
+
         const metaRes = await fetch(metaUrl, {
             method: 'GET',
             headers: { 'Authorization': CONFIG.token, 'Accept': 'application/json' }
@@ -80,12 +84,12 @@ async function processLessonTest(folderId, lpId, lessonTitleOverride = null) {
         const testId = testObj.id;
         // Usa il titolo passato dalla lista cartelle, oppure quello dentro il paragrafo
         const finalTitle = lessonTitleOverride || testObj.titleLesson || `Lezione ${lpId}`;
-        
+
         console.log(`✅ Lezione ${lpId}: Trovato TestID ${testId} - Scarico domande...`);
 
         // 2. POST per scaricare le domande
         const sourceUrl = `https://lms-api.prod.pegaso.multiversity.click/student/course/${CONFIG.courseCode}/video-lessons/test/source`;
-        
+
         const sourceRes = await fetch(sourceUrl, {
             method: 'POST',
             headers: {
@@ -125,14 +129,14 @@ async function runFolderScraper() {
 
     for (const folderId of CONFIG.targetFolders) {
         console.log(`\n--- Elaborazione Cartella ID: ${folderId} ---`);
-        
+
         try {
             // 1. Ottieni la lista delle lezioni nella cartella
             const listUrl = `https://lms-api.prod.pegaso.multiversity.click/student/course/${CONFIG.courseCode}/video-lessons/${folderId}`;
             const listRes = await fetch(listUrl, {
                 headers: { 'Authorization': CONFIG.token, 'Accept': 'application/json' }
             });
-            
+
             if (!listRes.ok) throw new Error(`Errore lista cartella ${listRes.status}`);
             const listJson = await listRes.json();
 
@@ -146,11 +150,11 @@ async function runFolderScraper() {
 
                 // Chiamata al Core
                 const result = await processLessonTest(folderId, lpId, title);
-                
+
                 if (result) {
                     allData.push(result);
                 }
-                
+
                 // Delay anti-ban
                 await new Promise(r => setTimeout(r, 200));
             }
@@ -159,7 +163,7 @@ async function runFolderScraper() {
             console.error(`Errore critico sulla cartella ${folderId}:`, err);
         }
     }
-    
+
     return allData;
 }
 
@@ -175,7 +179,7 @@ async function runSequentialScraper() {
         // quindi passo (i, i)
         const result = await processLessonTest(i, i);
         if (result) allData.push(result);
-        
+
         await new Promise(r => setTimeout(r, 200));
     }
     return allData;
