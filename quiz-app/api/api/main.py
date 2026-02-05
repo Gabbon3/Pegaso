@@ -47,19 +47,28 @@ def get_quiz(
     materia_id: int,
     lezione_da: Optional[int] = None,
     lezione_a: Optional[int] = None,
-    difficolta_min: Optional[int] = Query(1, ge=1, le=5), # Default 1
-    difficolta_max: Optional[int] = Query(5, ge=1, le=5), # Default 5
+    difficolta_min: Optional[int] = Query(1, ge=1, le=5),
+    difficolta_max: Optional[int] = Query(5, ge=1, le=5),
     limite: int = 10
 ):
     conn = get_db_connection()
     cur = conn.cursor()
     
+    # Usiamo la tecnica della subquery per le risposte (r_agg)
+    # e facciamo il JOIN con lezione (l) per il titolo
     query = """
-        SELECT d.id, d.testo as domanda, d.difficolta, d.numero_lezione,
-               json_agg(json_build_object('id', r.id, 'testo', r.testo)) as opzioni,
+        SELECT d.id, d.testo AS domanda, d.difficolta, d.numero_lezione, 
+               l.titolo AS lezione_titolo, d.paragrafo,
+               r_agg.opzioni,
                d.id_risposta_corretta
         FROM domanda d
-        JOIN risposta r ON d.id = r.id_domanda
+        JOIN lezione l ON l.numero_lezione = d.numero_lezione
+        JOIN (
+            SELECT id_domanda, 
+                   json_agg(json_build_object('id', id, 'testo', testo)) AS opzioni
+            FROM risposta
+            GROUP BY id_domanda
+        ) r_agg ON d.id = r_agg.id_domanda
         WHERE d.id_materia = %s
     """
     params = [materia_id]
@@ -72,14 +81,15 @@ def get_quiz(
         query += " AND d.numero_lezione <= %s"
         params.append(lezione_a)
         
-    # Filtro Difficoltà (Flessibile: da... a...)
+    # Filtro Difficoltà
     query += " AND d.difficolta >= %s AND d.difficolta <= %s"
     params.extend([difficolta_min, difficolta_max])
-        
-    query += " GROUP BY d.id ORDER BY RANDOM() LIMIT %s"
+    
+    query += " ORDER BY RANDOM() LIMIT %s"
     params.append(limite)
     
     cur.execute(query, params)
+    
     quiz = cur.fetchall()
     
     cur.close()
