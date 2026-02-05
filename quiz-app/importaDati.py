@@ -33,39 +33,31 @@ def migrate_json_to_db(json_file, nome_materia):
 
         for lezione in data:
             # --- LOGICA DI MAPPING ---
-            raw_folder = lezione.get('folder_id')
-            raw_lesson = lezione.get('lesson_id')
-            
-            numero_lezione_visuale = raw_folder if raw_folder else raw_lesson
-            
-            # ### FIX 1: Recupero corretto del titolo ###
+                        
+            # ### 1: Recupero corretto del titolo ###
             # Il titolo è dentro le domande, non nella root dell'oggetto lezione
             titolo_lezione = "Lezione Senza Titolo"
+            # variabile nel json usata come fallback
             questions_list = lezione.get('questions', [])
             
             if questions_list and len(questions_list) > 0:
                 # Prendi il titolo dalla prima domanda
                 titolo_lezione = questions_list[0].get('titolo_videolezione', 'Lezione Senza Titolo')
             elif 'lesson_title' in lezione:
-                # Fallback se presente nel root (come nel tuo JSON esempio c'è "lesson_title")
+                # Fallback se presente nel root
                 titolo_lezione = lezione['lesson_title']
+            
+            if titolo_lezione == '':
+                titolo_lezione = 'Null'
 
-            # ### FIX 2: Inserimento Lezione e RECUPERO ID REALE ###
-            cur.execute(
-                """
-                INSERT INTO lezione (numero_lezione, titolo) 
-                VALUES (%s, %s) 
-                RETURNING id
-                """,
-                (numero_lezione_visuale, titolo_lezione)
-            )
-            # Dobbiamo salvare questo ID per usarlo nelle domande!
-            id_lezione_reale_db = cur.fetchone()[0]
-
+            # ### 2: Ottengo l'ID della lezione ###
+            id_lezione = lezione['lesson_id']
+            
             for q in questions_list:
-                paragraph = q.get('paragraph', '')
+                sezione = q.get('paragraph', '')
+                paragraph = f'{titolo_lezione} - {sezione}'
                 
-                # ### FIX 3: Uso dell'ID corretto per la Foreign Key ###
+                # ### 3: Uso dell'ID corretto per la Foreign Key ###
                 # Non usiamo 'numero_lezione_visuale', ma 'id_lezione_reale_db'
                 # perché la tabella domanda ha una FK su lezione(id)
                 cur.execute(
@@ -74,7 +66,7 @@ def migrate_json_to_db(json_file, nome_materia):
                     VALUES (%s, %s, %s, %s, %s) 
                     RETURNING id
                     """,
-                    (id_materia, q.get('difficulty', 1), q['question'], id_lezione_reale_db, paragraph)
+                    (id_materia, q.get('difficulty', 1), q['question'], id_lezione, paragraph)
                 )
                 id_domanda = cur.fetchone()[0]
                 count_domande += 1
@@ -125,10 +117,10 @@ def migrate_json_to_db(json_file, nome_materia):
 
 
 # Migrazioni precedenti
-# migrate_json_to_db('C:\\Users\\g2004\\Desktop\\Pegaso\\☑️ Ingegneria del Software\\quiz_ingegneria_software.json', 'Ingegneria del Software')
-# migrate_json_to_db('C:\\Users\\g2004\\Desktop\\Pegaso\\Algoritmi e Strutture Dati\\quiz_algoritmi_e_strutture_dati.json', 'Algoritmi e Strutture Dati')
-# migrate_json_to_db('C:\\Users\\g2004\\Desktop\\Pegaso\\☑️ Architettura Dei Calcolatori\\quiz_architettura_dei_calcolatori.json', 'Architettura dei Calcolatori')
-# migrate_json_to_db('C:\\Users\\g2004\\Desktop\\Pegaso\\Programmazione\\quiz_programmazione.json', 'Programmazione')
+migrate_json_to_db('C:\\Users\\g2004\\Desktop\\Pegaso\\☑️ Ingegneria del Software\\quiz_ingegneria_software.json', 'Ingegneria del Software')
+migrate_json_to_db('C:\\Users\\g2004\\Desktop\\Pegaso\\Algoritmi e Strutture Dati\\quiz_algoritmi_e_strutture_dati.json', 'Algoritmi e Strutture Dati')
+migrate_json_to_db('C:\\Users\\g2004\\Desktop\\Pegaso\\☑️ Architettura Dei Calcolatori\\quiz_architettura_dei_calcolatori.json', 'Architettura dei Calcolatori')
+migrate_json_to_db('C:\\Users\\g2004\\Desktop\\Pegaso\\Programmazione\\quiz_programmazione.json', 'Programmazione')
 
 # Migrazioni PC 2
 # migrate_json_to_db('C:\\Users\\u1617\\Desktop\\Pegaso\\☑️ Ingegneria del Software\\quiz_ingegneria_software.json', 'Ingegneria del Software')
