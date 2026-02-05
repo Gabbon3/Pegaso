@@ -29,13 +29,18 @@ defineEmits(["answer", "prev", "next"]);
                 }"
             ></div>
         </div>
-
+        <div>
+            <div 
+                class="text-s text-text-3"
+                v-text="`${question.lezione_titolo ?? 'Titolo lezione non specificato'} - ${question.paragrafo}`"
+            ></div>
+        </div>
         <div class="space-y-4">
             <div v-if="question.imageUrl" class="flex justify-center">
                 <img :src="question.imageUrl">
             </div>
             <div
-                class="text-xl font-semibold text-text leading-relaxed"
+                class="text-xl font-semibold text-text"
                 v-html="question.domandaClean"
             ></div>
         </div>
