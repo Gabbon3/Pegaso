@@ -6,12 +6,15 @@ import QuizMenu from "./components/QuizMenu.vue";
 import QuizGame from "./components/QuizGame.vue";
 import QuizResults from "./components/QuizResults.vue";
 import api from "./api";
+import QuizChapters from "./components/QuizChapters.vue";
 
 // --- STATO ---
 const gameState = ref("menu"); 
 const loading = ref(false);
 const error = ref(null);
 const materie = ref([]);
+const capitoli = ref([]);
+const loadingCapitoli = ref(false);
 
 const config = ref({
     materia_id: null,
@@ -130,6 +133,26 @@ const resetQuiz = () => {
     gameState.value = "menu";
     quizData.value = [];
 };
+
+/**
+ * Restituisce la lista dei capitoli per una materia
+ */
+const viewChapters = async () => {
+    if (!config.value.materia_id) return;
+    
+    loadingCapitoli.value = true;
+    gameState.value = "chapters";
+    
+    try {
+        const response = await api.get(`/materie/${config.value.materia_id}/capitoli`);
+        capitoli.value = response.data;
+    } catch (err) {
+        error.value = "Errore nel caricamento dei capitoli.";
+        gameState.value = "menu";
+    } finally {
+        loadingCapitoli.value = false;
+    }
+};
 </script>
 
 <template>
@@ -150,6 +173,7 @@ const resetQuiz = () => {
                 :loading="loading"
                 :config="config"
                 @start-quiz="startQuiz"
+                @view-chapters="viewChapters"
             />
 
             <QuizGame 
@@ -169,6 +193,13 @@ const resetQuiz = () => {
                 :score="score"
                 :total="quizData.length"
                 @reset="resetQuiz"
+            />
+
+            <QuizChapters 
+                v-if="gameState === 'chapters'"
+                :capitoli="capitoli"
+                :loading="loadingCapitoli"
+                @back="gameState = 'menu'"
             />
 
         </div>

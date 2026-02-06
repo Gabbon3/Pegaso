@@ -41,6 +41,25 @@ def get_materie():
     conn.close()
     return materie
 
+@app.get("/materie/{id_materia}/capitoli")
+def get_capitoli_materia(
+    id_materia: int
+):
+    conn = get_db_connection()
+    cur = conn.cursor()
+    query = """
+        SELECT distinct numero_lezione, paragrafo 
+        FROM domanda 
+        WHERE id_materia = %s 
+        ORDER BY numero_lezione ASC
+    """
+    params = [id_materia]
+    cur.execute(query, params)
+    capitoli = cur.fetchall()
+    cur.close()
+    conn.close()
+    return capitoli
+
 # Restituisce un quiz completo personalizzabile
 @app.get("/quiz")
 def get_quiz(
