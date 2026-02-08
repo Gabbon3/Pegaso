@@ -4,10 +4,10 @@ import os
 
 # Configurazione DB
 DB_PARAMS = {
-    "dbname": "pegaso",
-    "user": "postgres",
-    "password": "0000",
-    "host": "localhost"
+    "dbname": "postgres",
+    "user": "postgres.hhyoiqjstggzfzryhxkc",
+    "password": "$bE5xqeW*eNpv7lZjD#Z3Zfm",
+    "host": "aws-1-eu-west-3.pooler.supabase.com"
 }
 
 def migrate_json_to_db(json_file, nome_materia):
@@ -117,10 +117,11 @@ def migrate_json_to_db(json_file, nome_materia):
 
 
 # Migrazioni precedenti
-migrate_json_to_db('C:\\Users\\g2004\\Desktop\\Pegaso\\☑️ Ingegneria del Software\\quiz_ingegneria_software.json', 'Ingegneria del Software')
-migrate_json_to_db('C:\\Users\\g2004\\Desktop\\Pegaso\\Algoritmi e Strutture Dati\\quiz_algoritmi_e_strutture_dati.json', 'Algoritmi e Strutture Dati')
-migrate_json_to_db('C:\\Users\\g2004\\Desktop\\Pegaso\\☑️ Architettura Dei Calcolatori\\quiz_architettura_dei_calcolatori.json', 'Architettura dei Calcolatori')
-migrate_json_to_db('C:\\Users\\g2004\\Desktop\\Pegaso\\Programmazione\\quiz_programmazione.json', 'Programmazione')
+# migrate_json_to_db('C:\\Users\\g2004\\Desktop\\Pegaso\\☑️ Ingegneria del Software\\quiz_ingegneria_software.json', 'Ingegneria del Software')
+# migrate_json_to_db('C:\\Users\\g2004\\Desktop\\Pegaso\\Algoritmi e Strutture Dati\\quiz_algoritmi_e_strutture_dati.json', 'Algoritmi e Strutture Dati')
+# migrate_json_to_db('C:\\Users\\g2004\\Desktop\\Pegaso\\☑️ Architettura Dei Calcolatori\\quiz_architettura_dei_calcolatori.json', 'Architettura dei Calcolatori')
+# migrate_json_to_db('C:\\Users\\g2004\\Desktop\\Pegaso\\Programmazione\\quiz_programmazione.json', 'Programmazione')
+# migrate_json_to_db('C:\\Users\\g2004\\Desktop\\Pegaso\\Probabilita e Statistica\\quiz_statistica_probabilita.json', 'Calcolo Probabilita e Statistica')
 
 # Migrazioni PC 2
 # migrate_json_to_db('C:\\Users\\u1617\\Desktop\\Pegaso\\☑️ Ingegneria del Software\\quiz_ingegneria_software.json', 'Ingegneria del Software')

@@ -1,0 +1,2094 @@
+[
+  {
+    "lesson_id": 1,
+    "folder_id": 1,
+    "lesson_title": "Lezione 1",
+    "test_id": 59855,
+    "questions": [
+      {
+        "id_question": "1",
+        "question": "Cosa rappresenta un\"evento\":",
+        "paragraph": "Concetti primitivi di probabilità",
+        "titolo_videolezione": "Probabilità: concetti di base",
+        "correct_answer": "2",
+        "difficulty": "2",
+        "answers": [
+          {
+            "id_answer": 0,
+            "answer": "un esperimento che ha due o più possibili risultati"
+          },
+          {
+            "id_answer": 1,
+            "answer": "uno dei possibili risultati della prova"
+          },
+          {
+            "id_answer": 2,
+            "answer": "il grado di incertezza connesso al verificarsi di un risultato"
+          },
+          {
+            "id_answer": 3,
+            "answer": "il rapporto tra il numero dei casi favorevoli e il numero dei casi possibili"
+          }
+        ]
+      },
+      {
+        "id_question": "2",
+        "question": "Qual è il risultato dell'intersezione di un evento A con la sua negazione:",
+        "paragraph": "Algebra di Eventi",
+        "titolo_videolezione": "Probabilità: concetti di base",
+        "correct_answer": "4",
+        "difficulty": "4",
+        "answers": [
+          {
+            "id_answer": 0,
+            "answer": "lo spazio campionario W"
+          },
+          {
+            "id_answer": 1,
+            "answer": "l'evento A"
+          },
+          {
+            "id_answer": 2,
+            "answer": "l'evento certo"
+          },
+          {
+            "id_answer": 3,
+            "answer": "l'evento impossibile Æ"
+          }
+        ]
+      },
+      {
+        "id_question": "3",
+        "question": "Da un'urna contenente 100 palline (30 nere e 70 bianche) si estraggono 3 palline in sequenza con reimmissione. Qual è l'unione dell'evento A \"non si estrae alcuna pallina nera\" e B \"si estrae almeno una pallina nera\":",
+        "paragraph": "Algebra di Eventi: esempi",
+        "titolo_videolezione": "Probabilità: concetti di base",
+        "correct_answer": "1",
+        "difficulty": "4",
+        "answers": [
+          {
+            "id_answer": 0,
+            "answer": "lo spazio campionario W"
+          },
+          {
+            "id_answer": 1,
+            "answer": "l'evento A"
+          },
+          {
+            "id_answer": 2,
+            "answer": "l'evento impossibile Æ"
+          },
+          {
+            "id_answer": 3,
+            "answer": "l'evento B"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson_id": 2,
+    "folder_id": 2,
+    "lesson_title": "Lezione 2",
+    "test_id": 59857,
+    "questions": [
+      {
+        "id_question": "1",
+        "question": "Quale dei seguenti enunciati rappresenta correttamente uno dei postulati della probabilità:",
+        "paragraph": "I postulati",
+        "titolo_videolezione": "Probabilità condizionata e indipendenza",
+        "correct_answer": "2",
+        "difficulty": "2",
+        "answers": [
+          {
+            "id_answer": 0,
+            "answer": "la probabilità di un evento è sempre maggiore di 1"
+          },
+          {
+            "id_answer": 1,
+            "answer": "la probabilità di un evento impossibile è uguale a 0"
+          },
+          {
+            "id_answer": 2,
+            "answer": "la somma delle probabilità di tutti gli eventi è sempre inferiore a 1"
+          },
+          {
+            "id_answer": 3,
+            "answer": "la probabilità di un evento poco frequente è sempre un numero negativo"
+          }
+        ]
+      },
+      {
+        "id_question": "2",
+        "question": "Due eventi sono indipendenti quando:",
+        "paragraph": "Eventi indipendenti",
+        "titolo_videolezione": "Probabilità condizionata e indipendenza",
+        "correct_answer": "3",
+        "difficulty": "4",
+        "answers": [
+          {
+            "id_answer": 0,
+            "answer": "hanno probabilità uguale"
+          },
+          {
+            "id_answer": 1,
+            "answer": "l'evento A esclude il verificarsi dell'evento B"
+          },
+          {
+            "id_answer": 2,
+            "answer": "la probabilità congiunta dei due eventi è uguale al prodotto delle probabilità individuali"
+          },
+          {
+            "id_answer": 3,
+            "answer": "l'intersezione tra i due eventi è l'insieme vuoto"
+          }
+        ]
+      },
+      {
+        "id_question": "3",
+        "question": "Quale delle seguenti affermazioni è corretta sulla probabilità condizionata:",
+        "paragraph": "Probabilità condizionata",
+        "titolo_videolezione": "Probabilità condizionata e indipendenza",
+        "correct_answer": "2",
+        "difficulty": "4",
+        "answers": [
+          {
+            "id_answer": 0,
+            "answer": "è sempre uguale alla probabilità dell'evento iniziale"
+          },
+          {
+            "id_answer": 1,
+            "answer": "è calcolata considerando solo i casi in cui l'evento condizionante si è verificato"
+          },
+          {
+            "id_answer": 2,
+            "answer": "si ottiene sottraendo la probabilità dell'evento condizionante dalla probabilità totale"
+          },
+          {
+            "id_answer": 3,
+            "answer": "la probabilità condizionata è sempre minore della probabilità totale"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson_id": 3,
+    "folder_id": 3,
+    "lesson_title": "Lezione 3",
+    "test_id": 59936,
+    "questions": [
+      {
+        "id_question": "1",
+        "question": "Il Teorema di Bayes risponde alla domanda:",
+        "paragraph": "Il Teorema di Bayes: introduzione",
+        "titolo_videolezione": "Il Teorema di Bayes",
+        "correct_answer": "2",
+        "difficulty": "4",
+        "answers": [
+          {
+            "id_answer": 0,
+            "answer": "Qual è la probabilità che un evento si verifichi in un esperimento casuale?"
+          },
+          {
+            "id_answer": 1,
+            "answer": "Dato il verificarsi di un evento, qual è la probabilità che si sia verificata la causa A?"
+          },
+          {
+            "id_answer": 2,
+            "answer": "Qual è la probabilità che due eventi accadano contemporaneamente?"
+          },
+          {
+            "id_answer": 3,
+            "answer": "Qual è la probabilità di un evento non noto?"
+          }
+        ]
+      },
+      {
+        "id_question": "2",
+        "question": "Il Teorema di Bayes si applica a eventi",
+        "paragraph": "Il Teorema di Bayes: generalizzazione",
+        "titolo_videolezione": "Il Teorema di Bayes",
+        "correct_answer": "1",
+        "difficulty": "3",
+        "answers": [
+          {
+            "id_answer": 0,
+            "answer": "mutuamente esclusivi ed esaustivi"
+          },
+          {
+            "id_answer": 1,
+            "answer": "indipendenti"
+          },
+          {
+            "id_answer": 2,
+            "answer": "con probabilità uguali"
+          },
+          {
+            "id_answer": 3,
+            "answer": "casuali e imprevedibili"
+          }
+        ]
+      },
+      {
+        "id_question": "3",
+        "question": "In un test diagnostico, un falso negativo indica",
+        "paragraph": "Il Teorema di Bayes: applicazione",
+        "titolo_videolezione": "Il Teorema di Bayes",
+        "correct_answer": "3",
+        "difficulty": "3",
+        "answers": [
+          {
+            "id_answer": 0,
+            "answer": "Un test che risulta negativo quando il soggetto è sano."
+          },
+          {
+            "id_answer": 1,
+            "answer": "Un test che risulta positivo quando il soggetto è malato"
+          },
+          {
+            "id_answer": 2,
+            "answer": "Un test che risulta negativo quando il soggetto è malato"
+          },
+          {
+            "id_answer": 3,
+            "answer": "Un test che risulta positivo anche per soggetti sani"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson_id": 4,
+    "folder_id": 4,
+    "lesson_title": "Lezione 4",
+    "test_id": 59937,
+    "questions": [
+      {
+        "id_question": "1",
+        "question": "Cosa è una variabile casuale",
+        "paragraph": "Introduzione",
+        "titolo_videolezione": "Le variabili casuali: introduzione",
+        "correct_answer": "2",
+        "difficulty": "4",
+        "answers": [
+          {
+            "id_answer": 0,
+            "answer": "L'insieme di tutti i possibili eventi elementari"
+          },
+          {
+            "id_answer": 1,
+            "answer": "Una funzione definita sullo spazio campionario Ω che associa a ogni risultato elementare vi un unico numero reale"
+          },
+          {
+            "id_answer": 2,
+            "answer": "Una funzione definita sullo spazio campionario Ω che associa a ogni risultato elementare vi un due o più numeri reale"
+          },
+          {
+            "id_answer": 3,
+            "answer": "Uno dei possibili risultati di una prova"
+          }
+        ]
+      },
+      {
+        "id_question": "2",
+        "question": "Considerando la variabile casuale X=somma dei punteggi del lancio di due dadi. Qual è la probabilità che X=4",
+        "paragraph": "Esempi di variabile casuale",
+        "titolo_videolezione": "Le variabili casuali: introduzione",
+        "correct_answer": "3",
+        "difficulty": "3",
+        "answers": [
+          {
+            "id_answer": 0,
+            "answer": "3/12"
+          },
+          {
+            "id_answer": 1,
+            "answer": "4/36"
+          },
+          {
+            "id_answer": 2,
+            "answer": "1/12"
+          },
+          {
+            "id_answer": 3,
+            "answer": "4/12"
+          }
+        ]
+      },
+      {
+        "id_question": "3",
+        "question": "Qual è la principale differenza tra una variabile casuale discreta e una variabile casuale continua",
+        "paragraph": "Variabili casuali discrete e continue",
+        "titolo_videolezione": "Le variabili casuali: introduzione",
+        "correct_answer": "4",
+        "difficulty": "4",
+        "answers": [
+          {
+            "id_answer": 0,
+            "answer": "Una variabile casuale discreta può assumere solo numeri pari, mentre una variabile casuale continua può assumere qualsiasi numero"
+          },
+          {
+            "id_answer": 1,
+            "answer": "Una variabile casuale continua assume un insieme finito o numerabile di valori distinti, mentre una variabile casuale discreta può assumere infiniti valori in un intervallo"
+          },
+          {
+            "id_answer": 2,
+            "answer": "Una variabile casuale discreta è sempre inferiore a una variabile casuale continua"
+          },
+          {
+            "id_answer": 3,
+            "answer": "Una variabile casuale discreta assume un insieme finito o numerabile di valori distinti, mentre una variabile casuale continua può assumere infiniti valori in un intervallo"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson_id": 5,
+    "folder_id": 5,
+    "lesson_title": "Lezione 5",
+    "test_id": 60285,
+    "questions": [
+      {
+        "id_question": "1",
+        "question": "Cosa è la funzione di probabilità",
+        "paragraph": "Introduzione",
+        "titolo_videolezione": "Le variabili causali discrete",
+        "correct_answer": "1",
+        "difficulty": "4",
+        "answers": [
+          {
+            "id_answer": 0,
+            "answer": "Corretto"
+          },
+          {
+            "id_answer": 1,
+            "answer": "Data una variabile casuale X, la funzione che associa a ognuno dei possibili valori xi la probabilità P(X≤xi)"
+          },
+          {
+            "id_answer": 2,
+            "answer": "Una funzione definita sullo spazio campionario Ω che associa a ogni risultato elementare vi un numero reale"
+          },
+          {
+            "id_answer": 3,
+            "answer": "L'insieme di eventi dello spazio campionario"
+          }
+        ]
+      },
+      {
+        "id_question": "2",
+        "question": "Cosa è la funzione di ripartizione",
+        "paragraph": "La funzione di ripartizione per una v.c. discreta",
+        "titolo_videolezione": "Le variabili causali: introduzione",
+        "correct_answer": "2",
+        "difficulty": "3",
+        "answers": [
+          {
+            "id_answer": 0,
+            "answer": "No, questa è la definizione di funzione di probabilità"
+          },
+          {
+            "id_answer": 1,
+            "answer": "Data una variabile casuale X, la funzione che associa a ognuno dei possibili valori xi le probabilità cumulative P(X≤xi)"
+          },
+          {
+            "id_answer": 2,
+            "answer": "Una funzione definita sullo spazio campionario Ω che associa a ogni risultato elementare vi un numero reale."
+          },
+          {
+            "id_answer": 3,
+            "answer": "Una funzione decrescente"
+          }
+        ]
+      },
+      {
+        "id_question": "3",
+        "question": "Data una variabile casuale X, che può assumere valore 0 con probabilità 0,50, valore 1 con probabilità 0,30 e valore 2 con probabilità 0,20. Qual è il valore della funzione di ripartizione, quando X=2",
+        "paragraph": "Esempio di funzione di ripartizione per v.c. discreta",
+        "titolo_videolezione": "Le variabili causali: introduzione",
+        "correct_answer": "4",
+        "difficulty": "4",
+        "answers": [
+          {
+            "id_answer": 0,
+            "answer": "No, è il valore della funzione di ripartizione per x=0"
+          },
+          {
+            "id_answer": 1,
+            "answer": "0,80"
+          },
+          {
+            "id_answer": 2,
+            "answer": "0,30"
+          },
+          {
+            "id_answer": 3,
+            "answer": "1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson_id": 6,
+    "folder_id": 6,
+    "lesson_title": "Lezione 6",
+    "test_id": 60286,
+    "questions": [
+      {
+        "id_question": "1",
+        "question": "Cosa rappresenta la funzione di densità in una v.c. continua",
+        "paragraph": "Introduzione",
+        "titolo_videolezione": "Le variabili causali continue",
+        "correct_answer": "2",
+        "difficulty": "4",
+        "answers": [
+          {
+            "id_answer": 0,
+            "answer": "Una funzione che assegna probabilità ai valori discreti"
+          },
+          {
+            "id_answer": 1,
+            "answer": "Una funzione che assegna probabilità a tutti i possibili intervalli sull'asse reale"
+          },
+          {
+            "id_answer": 2,
+            "answer": "Un valore che indica la probabilità di un singolo evento"
+          },
+          {
+            "id_answer": 3,
+            "answer": "Un valore fisso per ogni intervallo"
+          }
+        ]
+      },
+      {
+        "id_question": "2",
+        "question": "Come si calcola la probabilità di un intervallo tramite la funzione di densità",
+        "paragraph": "La funzione di densità",
+        "titolo_videolezione": "Le variabili causali continue",
+        "correct_answer": "3",
+        "difficulty": "4",
+        "answers": [
+          {
+            "id_answer": 0,
+            "answer": "Si calcola come la somma delle densità nei punti dell'intervallo"
+          },
+          {
+            "id_answer": 1,
+            "answer": "Si ottiene prendendo il valore massimo della densità nell'intervallo"
+          },
+          {
+            "id_answer": 2,
+            "answer": "Si calcola integrando la funzione di densità sull'intervallo"
+          },
+          {
+            "id_answer": 3,
+            "answer": "Non è possibile calcolare la probabilità di un intervallo con la funzione di densità"
+          }
+        ]
+      },
+      {
+        "id_question": "3",
+        "question": "Data una v.c. X continua, cosa rappresenta la funzione di ripartizione calcolatra nell'intervallo (a;b)",
+        "paragraph": "La funzione di densità: esempio pratico",
+        "titolo_videolezione": "Le variabili causali continue",
+        "correct_answer": "4",
+        "difficulty": "4",
+        "answers": [
+          {
+            "id_answer": 0,
+            "answer": "La probabilità che la variabile casuale assuma un valore esattamente uguale ad a o b"
+          },
+          {
+            "id_answer": 1,
+            "answer": "Il valore massimo della funzione di densità tra a e b"
+          },
+          {
+            "id_answer": 2,
+            "answer": "La somma delle densità nei punti a e b"
+          },
+          {
+            "id_answer": 3,
+            "answer": "La probabilità che la variabile casuale assuma X un valore nell'intervallo (a, b)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson_id": 7,
+    "folder_id": 7,
+    "lesson_title": "Lezione 7",
+    "test_id": 60287,
+    "questions": [
+      {
+        "id_question": "1",
+        "question": "Come si calcola il valore atteso di una variabile casuale discreta",
+        "paragraph": "Valore atteso",
+        "titolo_videolezione": "Valore atteso e varianza di una variabile casuale",
+        "correct_answer": "4",
+        "difficulty": "3",
+        "answers": [
+          {
+            "id_answer": 0,
+            "answer": "Come somma delle xi diviso il numero di osservazioni"
+          },
+          {
+            "id_answer": 1,
+            "answer": "Sottraendo il quadrato del valore atteso di X al valore atteso del quadrato di X"
+          },
+          {
+            "id_answer": 2,
+            "answer": "Sottraendo i prodotti dei valori che X può assumere con le rispettive probabilità: E(X) = Σ [xi * p(xi)]"
+          },
+          {
+            "id_answer": 3,
+            "answer": "Sommando i prodotti dei valori che X può assumere con le rispettive probabilità: E(X) = Σ [xi * p(xi)]"
+          }
+        ]
+      },
+      {
+        "id_question": "2",
+        "question": "Cosa misura la varianza di una variabile casuale X",
+        "paragraph": "Varianza",
+        "titolo_videolezione": "Valore atteso e varianza di una variabile casuale",
+        "correct_answer": "2",
+        "difficulty": "4",
+        "answers": [
+          {
+            "id_answer": 0,
+            "answer": "La varianza misura la media dei valori della variabile casuale"
+          },
+          {
+            "id_answer": 1,
+            "answer": "La varianza misura la differenza quadratica tra i possibili valori della v. c. e il suo valore atteso, con pesi dati dalle probabilità di osservare tali valori."
+          },
+          {
+            "id_answer": 2,
+            "answer": "La varianza misura la somma degli scarti dei valori della variabile casuale rispetto al valore atteso"
+          },
+          {
+            "id_answer": 3,
+            "answer": "La varianza è sempre un numero positivo che rappresenta la probabilità di osservare un valore della variabile casuale"
+          }
+        ]
+      },
+      {
+        "id_question": "3",
+        "question": "Come si standardizza una variabile casuale",
+        "paragraph": "Variabili casuali standardizzate",
+        "titolo_videolezione": "Valore atteso e varianza di una variabile casuale",
+        "correct_answer": "3",
+        "difficulty": "3",
+        "answers": [
+          {
+            "id_answer": 0,
+            "answer": "Per standardizzare una variabile casuale, basta sottrarre il valore atteso"
+          },
+          {
+            "id_answer": 1,
+            "answer": "Per standardizzare una variabile casuale, bisogna dividerla per la sua varianza"
+          },
+          {
+            "id_answer": 2,
+            "answer": "Una variabile casuale X si standardizza sottraendo la sua media e dividendo per la sua deviazione standard"
+          },
+          {
+            "id_answer": 3,
+            "answer": "La standardizzazione serve a trasformare qualsiasi variabile casuale in una distribuzione normale"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson_id": 8,
+    "folder_id": 8,
+    "lesson_title": "Lezione 8",
+    "test_id": 60305,
+    "questions": [
+      {
+        "id_question": "1",
+        "question": "Quale delle seguenti affermazioni descrive correttamente il comportamento di una variabile casuale con distribuzione uniforme discreta",
+        "paragraph": "Distribuzione Uniforme discreta",
+        "titolo_videolezione": "Distribuzioni di probabilità per v.c. discrete",
+        "correct_answer": "3",
+        "difficulty": "2",
+        "answers": [
+          {
+            "id_answer": 0,
+            "answer": "La variabile casuale assume solo due possibili valori: 0 e 1"
+          },
+          {
+            "id_answer": 1,
+            "answer": "Alcuni valori della variabile casuale hanno probabilità più alta di altri."
+          },
+          {
+            "id_answer": 2,
+            "answer": "Ogni valore della variabile casuale ha la stessa probabilità di verificarsi"
+          },
+          {
+            "id_answer": 3,
+            "answer": "Il valore atteso è sempre pari a zero"
+          }
+        ]
+      },
+      {
+        "id_question": "2",
+        "question": "Quale delle seguenti affermazioni è corretta riguardo alla distribuzione di Bernoulli",
+        "paragraph": "Distribuzione di Bernoulli",
+        "titolo_videolezione": "Distribuzioni di probabilità per v.c. discrete",
+        "correct_answer": "4",
+        "difficulty": "3",
+        "answers": [
+          {
+            "id_answer": 0,
+            "answer": "Una variabile casuale di Bernoulli può assumere più di due valori"
+          },
+          {
+            "id_answer": 1,
+            "answer": "La distribuzione di Bernoulli assegna la stessa probabilità a tutti i valori possibili."
+          },
+          {
+            "id_answer": 2,
+            "answer": "La varianza di una v. c. di Bernoulli coincide con il valore atteso"
+          },
+          {
+            "id_answer": 3,
+            "answer": "La distribuzione di Bernoulli è utile per modellare situazioni in cui si osservano solo due possibili risultati."
+          }
+        ]
+      },
+      {
+        "id_question": "3",
+        "question": "Se una variabile casuale Bernoulli ha probabilità di successo p=0.3, qual è la sua varianza",
+        "paragraph": "Distribuzione di Bernoulli: esempio",
+        "titolo_videolezione": "Distribuzioni di probabilità per v.c. discrete",
+        "correct_answer": "2",
+        "difficulty": "3",
+        "answers": [
+          {
+            "id_answer": 0,
+            "answer": "0,3"
+          },
+          {
+            "id_answer": 1,
+            "answer": "0,21"
+          },
+          {
+            "id_answer": 2,
+            "answer": "1"
+          },
+          {
+            "id_answer": 3,
+            "answer": "0,7"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson_id": 9,
+    "folder_id": 9,
+    "lesson_title": "Lezione 9",
+    "test_id": 60308,
+    "questions": [
+      {
+        "id_question": "1",
+        "question": "Quale delle seguenti affermazioni descrive correttamente una distribuzione binomiale",
+        "paragraph": "Caratteristiche",
+        "titolo_videolezione": "Distribuzione Binomiale",
+        "correct_answer": "2",
+        "difficulty": "3",
+        "answers": [
+          {
+            "id_answer": 0,
+            "answer": "È una distribuzione discreta con solo due possibili valori: 0 e 1"
+          },
+          {
+            "id_answer": 1,
+            "answer": "È la somma di più variabili casuali di Bernoulli indipendenti e identicamente distribuite"
+          },
+          {
+            "id_answer": 2,
+            "answer": "È una distribuzione continua che assume valori tra 0 e n"
+          },
+          {
+            "id_answer": 3,
+            "answer": "È una distribuzione che descrive il numero di successi in n prove, ma solo se p=0.5"
+          }
+        ]
+      },
+      {
+        "id_question": "2",
+        "question": "Come si comportano il valore atteso E(X) e la varianza V(X) di una distribuzione binomiale al crescere di n",
+        "paragraph": "Valore atteso e varianza",
+        "titolo_videolezione": "Distribuzione Binomiale",
+        "correct_answer": "4",
+        "difficulty": "4",
+        "answers": [
+          {
+            "id_answer": 0,
+            "answer": "E(X) cresce linearmente con n, mentre V(X) rimane costante"
+          },
+          {
+            "id_answer": 1,
+            "answer": "E(X) rimane costante mentre V(X) diminuisce con n"
+          },
+          {
+            "id_answer": 2,
+            "answer": "E(X) e V(X) crescono entrambi esponenzialmente con n"
+          },
+          {
+            "id_answer": 3,
+            "answer": "E(X) e V(X) crescono al crescere di n"
+          }
+        ]
+      },
+      {
+        "id_question": "3",
+        "question": "Qual è la probabilità di osservare X=1 in una distribuzione binomiale con n=5 e p=0.5",
+        "paragraph": "Esempio",
+        "titolo_videolezione": "Distribuzione Binomiale",
+        "correct_answer": "2",
+        "difficulty": "5",
+        "answers": [
+          {
+            "id_answer": 0,
+            "answer": "0.5"
+          },
+          {
+            "id_answer": 1,
+            "answer": "0.03125"
+          },
+          {
+            "id_answer": 2,
+            "answer": "0.15625"
+          },
+          {
+            "id_answer": 3,
+            "answer": "0.3125"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson_id": 10,
+    "folder_id": 10,
+    "lesson_title": "Lezione 10",
+    "test_id": 61306,
+    "questions": [
+      {
+        "id_question": "1",
+        "question": "Quale delle seguenti affermazioni descrive correttamente la distribuzione di Poisson",
+        "paragraph": "Caratteristiche",
+        "titolo_videolezione": "Distribuzione di Poisson",
+        "correct_answer": "2",
+        "difficulty": "3",
+        "answers": [
+          {
+            "id_answer": 0,
+            "answer": "È una distribuzione discreta che descrive il numero di successi in n prove indipendenti"
+          },
+          {
+            "id_answer": 1,
+            "answer": "È una distribuzione discreta che descrive il numero di eventi rari in un intervallo di tempo o spazio fissato"
+          },
+          {
+            "id_answer": 2,
+            "answer": "È una distribuzione continua che assume valori reali positivi"
+          },
+          {
+            "id_answer": 3,
+            "answer": "È una distribuzione continua che descrive il numero di fallimenti in una sequenza di esperimenti"
+          }
+        ]
+      },
+      {
+        "id_question": "2",
+        "question": "Quali sono i postulati della distribuzione di Poisson",
+        "paragraph": "Postulati e proprietà",
+        "titolo_videolezione": "Distribuzione di Poisson",
+        "correct_answer": "3",
+        "difficulty": "4",
+        "answers": [
+          {
+            "id_answer": 0,
+            "answer": "Gli eventi si verificano a intervalli regolari e la probabilità di un evento è costante"
+          },
+          {
+            "id_answer": 1,
+            "answer": "Gli eventi sono dipendenti tra loro e possono accadere in momenti qualsiasi"
+          },
+          {
+            "id_answer": 2,
+            "answer": "Gli eventi sono indipendenti, la loro media è costante e possono verificarsi più eventi nello stesso intervallo"
+          },
+          {
+            "id_answer": 3,
+            "answer": "Gli eventi hanno probabilità crescente nel tempo"
+          }
+        ]
+      },
+      {
+        "id_question": "3",
+        "question": "Quando la distribuzione binomiale può essere approssimata dalla distribuzione di Poisson",
+        "paragraph": "Esempio",
+        "titolo_videolezione": "Distribuzione di Poisson",
+        "correct_answer": "4",
+        "difficulty": "4",
+        "answers": [
+          {
+            "id_answer": 0,
+            "answer": "Quando il numero delle prove (n) è grande e la probabilità di successo (p) è grande"
+          },
+          {
+            "id_answer": 1,
+            "answer": "Quando il numero delle prove (n) è piccolo e la probabilità di successo è maggiore di 1"
+          },
+          {
+            "id_answer": 2,
+            "answer": "Quando il numero delle prove (n) è grande e la probabilità di successo è maggiore di 1"
+          },
+          {
+            "id_answer": 3,
+            "answer": "Quando il numero delle prove (n) è grande e la probabilità di successo (p) è bassa"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson_id": 11,
+    "folder_id": 11,
+    "lesson_title": "Lezione 11",
+    "test_id": 61307,
+    "questions": [
+      {
+        "id_question": "1",
+        "question": "Qual è il legame tra media, moda e mediana nella distribuzione normale",
+        "paragraph": "Caratteristiche",
+        "titolo_videolezione": "Distribuzione Normale",
+        "correct_answer": "2",
+        "difficulty": "3",
+        "answers": [
+          {
+            "id_answer": 0,
+            "answer": "La moda è sempre maggiore della media"
+          },
+          {
+            "id_answer": 1,
+            "answer": "Sono sempre uguali nella distribuzione normale"
+          },
+          {
+            "id_answer": 2,
+            "answer": "La media è sempre minore della moda"
+          },
+          {
+            "id_answer": 3,
+            "answer": "Non c'è un legame definito"
+          }
+        ]
+      },
+      {
+        "id_question": "2",
+        "question": "Qual è il valore della funzione di ripartizione della normale standardizzata per z=0",
+        "paragraph": "Normale standardizzata",
+        "titolo_videolezione": "Distribuzione Normale",
+        "correct_answer": "1",
+        "difficulty": "4",
+        "answers": [
+          {
+            "id_answer": 0,
+            "answer": "0.5"
+          },
+          {
+            "id_answer": 1,
+            "answer": "1"
+          },
+          {
+            "id_answer": 2,
+            "answer": "-1"
+          },
+          {
+            "id_answer": 3,
+            "answer": "0"
+          }
+        ]
+      },
+      {
+        "id_question": "3",
+        "question": "Cosa contengono le tavole statistiche della normale standardizzata",
+        "paragraph": "Le tavole statistiche",
+        "titolo_videolezione": "Distribuzione Normale",
+        "correct_answer": "4",
+        "difficulty": "4",
+        "answers": [
+          {
+            "id_answer": 0,
+            "answer": "Solo i percentili della distribuzione normale"
+          },
+          {
+            "id_answer": 1,
+            "answer": "Il valore medio della distribuzione"
+          },
+          {
+            "id_answer": 2,
+            "answer": "Valori della funzione densità della normale standardizzata"
+          },
+          {
+            "id_answer": 3,
+            "answer": "Valori della funzione di ripartizione della distribuzione normale standardizzata"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson_id": 12,
+    "folder_id": 12,
+    "lesson_title": "Lezione 12",
+    "test_id": 61384,
+    "questions": [
+      {
+        "id_question": "1",
+        "question": "La deviazione standard della v. c. Normale indica:",
+        "paragraph": "Caratteristiche principali",
+        "titolo_videolezione": "Distribuzione Normale - approfondimenti",
+        "correct_answer": "3",
+        "difficulty": "3",
+        "answers": [
+          {
+            "id_answer": 0,
+            "answer": "la moda della distribuzione"
+          },
+          {
+            "id_answer": 1,
+            "answer": "se la media, la moda e la mediana coincidono"
+          },
+          {
+            "id_answer": 2,
+            "answer": "la dispersione dei valori intorno alla media"
+          },
+          {
+            "id_answer": 3,
+            "answer": "se la normale è standardizzata, indipendentemente dal valore della media"
+          }
+        ]
+      },
+      {
+        "id_question": "2",
+        "question": "L'indice di curtosi di Pearson pari a 3 indica:",
+        "paragraph": "Curtosi",
+        "titolo_videolezione": "Distribuzione Normale - approfondimenti",
+        "correct_answer": "2",
+        "difficulty": "4",
+        "answers": [
+          {
+            "id_answer": 0,
+            "answer": "maggiore probabilità dei valori estremi rispetto alla distribuzione normale"
+          },
+          {
+            "id_answer": 1,
+            "answer": "la distribuzione può essere bene rappresentata da una distribuzione normale"
+          },
+          {
+            "id_answer": 2,
+            "answer": "una maggiore frequenza di valori vicini alla media rispetto alla distribuzione normale"
+          },
+          {
+            "id_answer": 3,
+            "answer": "minore probabilità dei valori estremi rispetto alla distribuzione normale"
+          }
+        ]
+      },
+      {
+        "id_question": "3",
+        "question": "Il teorema del limite centrale afferma che:",
+        "paragraph": "Il teorema del limite centrale",
+        "titolo_videolezione": "Distribuzione Normale - approfondimenti",
+        "correct_answer": "4",
+        "difficulty": "5",
+        "answers": [
+          {
+            "id_answer": 0,
+            "answer": "quando il numero di osservazioni aumenta, la varianza della distribuzione campionaria diventa uguale a zero"
+          },
+          {
+            "id_answer": 1,
+            "answer": "se una variabile casuale ha una distribuzione con media e varianza finite, allora è sempre approssimabile con una normale"
+          },
+          {
+            "id_answer": 2,
+            "answer": "la somma di variabili casuali indipendenti segue sempre la stessa distribuzione delle variabili originali"
+          },
+          {
+            "id_answer": 3,
+            "answer": "la somma o la media di un numero elevato di variabili casuali indipendenti e identicamente distribuite (i.i.d.) tende a seguire una distribuzione normale, indipendentemente dalla distribuzione originale"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson_id": 14,
+    "folder_id": 14,
+    "lesson_title": "Lezione 14",
+    "test_id": 61421,
+    "questions": []
+  },
+  {
+    "lesson_id": 15,
+    "folder_id": 15,
+    "lesson_title": "Lezione 15",
+    "test_id": 61550,
+    "questions": [
+      {
+        "id_question": "1",
+        "question": "Una popolazione infinita consiste in:",
+        "paragraph": "Popolazione e parametri della popolazione",
+        "titolo_videolezione": "Il campionamento",
+        "correct_answer": "3",
+        "difficulty": "3",
+        "answers": [
+          {
+            "id_answer": 0,
+            "answer": "una popolazione con un numero illimitato di unità già esistenti"
+          },
+          {
+            "id_answer": 1,
+            "answer": "una popolazione che cresce indefinitamente nel tempo"
+          },
+          {
+            "id_answer": 2,
+            "answer": "una popolazione composta da un numero molto elevato di unità, incluse quelle potenzialmente osservabili e non necessariamente già esistenti fisicamente"
+          },
+          {
+            "id_answer": 3,
+            "answer": "una popolazione con molte unità esistenti e non che cresce nel tempo con una media che tende a zero"
+          }
+        ]
+      },
+      {
+        "id_question": "2",
+        "question": "Il piano di campionamento è definito da:",
+        "paragraph": "Campionamento da popolazioni finite",
+        "titolo_videolezione": "Il campionamento",
+        "correct_answer": "2",
+        "difficulty": "4",
+        "answers": [
+          {
+            "id_answer": 0,
+            "answer": "l'insieme delle unità osservate nel campione"
+          },
+          {
+            "id_answer": 1,
+            "answer": "la coppia spazio campionario e probabilità di estrazione dei singoli campioni"
+          },
+          {
+            "id_answer": 2,
+            "answer": "le caratteristiche della popolazione da cui viene estratto il campione"
+          },
+          {
+            "id_answer": 3,
+            "answer": "il numero di osservazioni necessarie per ottenere stime affidabili"
+          }
+        ]
+      },
+      {
+        "id_question": "3",
+        "question": "Qual è il legame tra lo spazio campionario di un campione ordinato e quello di un campione non ordinato:",
+        "paragraph": "Esempio di disegno campionario",
+        "titolo_videolezione": "Il campionamento",
+        "correct_answer": "4",
+        "difficulty": "5",
+        "answers": [
+          {
+            "id_answer": 0,
+            "answer": "lo spazio campionario del campione ordinato è un sottoinsieme dello spazio campionario del campione non ordinato"
+          },
+          {
+            "id_answer": 1,
+            "answer": "gli spazi campionari dei campioni ordinati e non ordinati hanno sempre lo stesso numero di campioni elementari"
+          },
+          {
+            "id_answer": 2,
+            "answer": "lo spazio campionario del campione non ordinato è sempre più grande di quello del campione ordinato"
+          },
+          {
+            "id_answer": 3,
+            "answer": "lo spazio campionario del campione ordinato contiene un numero maggiore di elementi rispetto a quello del campione non ordinato"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson_id": 16,
+    "folder_id": 16,
+    "lesson_title": "Lezione 16",
+    "test_id": 61565,
+    "questions": [
+      {
+        "id_question": "1",
+        "question": "Nel campionamento casuale semplice senza ripetizione la probabilità di selezione:",
+        "paragraph": "Il campionamento casuale semplice",
+        "titolo_videolezione": "Il campionamento da popolazioni finite",
+        "correct_answer": "2",
+        "difficulty": "3",
+        "answers": [
+          {
+            "id_answer": 0,
+            "answer": "è costante ad ogni estrazione"
+          },
+          {
+            "id_answer": 1,
+            "answer": "cambia ad ogni estrazione"
+          },
+          {
+            "id_answer": 2,
+            "answer": "è sempre pari a 1/N"
+          },
+          {
+            "id_answer": 3,
+            "answer": "è sempre pari a 1/N-n+1"
+          }
+        ]
+      },
+      {
+        "id_question": "2",
+        "question": "Nel campionamento casuale  stratificato:",
+        "paragraph": "Il campionamento casuale stratificato",
+        "titolo_videolezione": "Il campionamento da popolazioni finite",
+        "correct_answer": "3",
+        "difficulty": "4",
+        "answers": [
+          {
+            "id_answer": 0,
+            "answer": "la popolazione viene sempre suddivisa in N strati, dove N è la numerosità della popolazione"
+          },
+          {
+            "id_answer": 1,
+            "answer": "la popolazione viene suddivisa in un certo numero di strati, vengono selezionati alcuni strati mediante un'estrazione casuale senza ripetizione, infine tutte le unità degli strati selezionati vengono incluse nel campione"
+          },
+          {
+            "id_answer": 2,
+            "answer": "la popolazione viene suddivisa in un certo numero di strati. Da ogni strato vengono poi estratte, tramite un campionamento casuale semplice, le unità da inserire nel campione"
+          },
+          {
+            "id_answer": 3,
+            "answer": "la popolazione viene suddivisa in un certo numero di strati. Vengono selezionati k strati mediante campionamento semplice. Infine, da ogni strato selezionato vengono estratte, tramite un campionamento casuale semplice, le unità da inserire nel campione"
+          }
+        ]
+      },
+      {
+        "id_question": "3",
+        "question": "Nel campionamento casuale  a grappolo:",
+        "paragraph": "Il campionamento casuale a grappoli e a stadi",
+        "titolo_videolezione": "Il campionamento da popolazioni finite",
+        "correct_answer": "4",
+        "difficulty": "4",
+        "answers": [
+          {
+            "id_answer": 0,
+            "answer": "i campioni di uguale dimensione hanno tutti la stessa probabilità di essere estratti"
+          },
+          {
+            "id_answer": 1,
+            "answer": "la popolazione viene suddivisa in un certo numero di strati o grappoli. Da ogni strato vengono poi estratte, tramite un campionamento casuale semplice, le unità da inserire nel campione"
+          },
+          {
+            "id_answer": 2,
+            "answer": "la popolazione viene suddivisa in un certo numero di sottoinsiemi detti grappoli. Si selezionano quindi, con un'estrazione casuale senza ripetizione, un certo numero di grappoli e si prendono come unità campionarie tutte le unità appartenenti ai grappoli estratti"
+          },
+          {
+            "id_answer": 3,
+            "answer": "la popolazione viene suddivisa in un certo numero di sottoinsiemi detti grappoli. Si selezionano quindi, con un'estrazione casuale senza ripetizione, un certo numero di grappoli e si prendono come unità campionarie tutte le unità appartenenti ai grappoli estratti"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson_id": 17,
+    "folder_id": 17,
+    "lesson_title": "Lezione 17",
+    "test_id": 61575,
+    "questions": []
+  },
+  {
+    "lesson_id": 18,
+    "folder_id": 18,
+    "lesson_title": "Lezione 18",
+    "test_id": 61665,
+    "questions": [
+      {
+        "id_question": "1",
+        "question": "La statistica inferenziale è:",
+        "paragraph": "Principi di inferenza statistica",
+        "titolo_videolezione": "Teoria della stima",
+        "correct_answer": "1",
+        "difficulty": "1",
+        "answers": [
+          {
+            "id_answer": 0,
+            "answer": "è una disciplina che si compone di risultati teorici fondamentali che consentono in maniera induttiva di utilizzare le osservazioni relative ad un campione, allo scopo di giungere a conclusioni valide per la popolazione di riferimento non nota"
+          },
+          {
+            "id_answer": 1,
+            "answer": "è una disciplina non particolarmente  utile nei casi in cui non sia possibile osservare tutte le unità statistiche dalla popolazione"
+          },
+          {
+            "id_answer": 2,
+            "answer": "è un procedimento deduttivo"
+          },
+          {
+            "id_answer": 3,
+            "answer": "offrono una comprensione dettagliata ma poco immediata dei dati"
+          }
+        ]
+      },
+      {
+        "id_question": "2",
+        "question": "La stima puntuale:",
+        "paragraph": "Stima puntuale",
+        "titolo_videolezione": "Teoria della stima",
+        "correct_answer": "2",
+        "difficulty": "1",
+        "answers": [
+          {
+            "id_answer": 0,
+            "answer": "è una procedura che rientra nell'ambito della statistica descrittiva"
+          },
+          {
+            "id_answer": 1,
+            "answer": "è il corrispondente valore numerico calcolato sul campione osservato"
+          },
+          {
+            "id_answer": 2,
+            "answer": "rientra nell'ambito della verifica delle ipotesi"
+          },
+          {
+            "id_answer": 3,
+            "answer": "è una variabile casuale"
+          }
+        ]
+      },
+      {
+        "id_question": "3",
+        "question": "Lo stimatore:",
+        "paragraph": "Stimatori e stime",
+        "titolo_videolezione": "Teoria della stima",
+        "correct_answer": "1",
+        "difficulty": "1",
+        "answers": [
+          {
+            "id_answer": 0,
+            "answer": "è una variabile casuale definita su un campione casuale estratto dalla popolazione"
+          },
+          {
+            "id_answer": 1,
+            "answer": "non è uno strumento statistico"
+          },
+          {
+            "id_answer": 2,
+            "answer": "non possiede delle proprietà"
+          },
+          {
+            "id_answer": 3,
+            "answer": "è un numero determinato sulla base dei singoli campioni osservati"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson_id": 19,
+    "folder_id": 19,
+    "lesson_title": "Lezione 19",
+    "test_id": 61668,
+    "questions": [
+      {
+        "id_question": "1",
+        "question": "Lo stimatore T è corretto se:",
+        "paragraph": "Proprietà di uno stimatore e stimatore corretto",
+        "titolo_videolezione": "Proprietà degli stimatori puntuali",
+        "correct_answer": "3",
+        "difficulty": "1",
+        "answers": [
+          {
+            "id_answer": 0,
+            "answer": "non rappresenta un criterio di validità di uno stimatore"
+          },
+          {
+            "id_answer": 1,
+            "answer": "non presenta una distribuzione campionaria dello stimatore centrata sul  parametro"
+          },
+          {
+            "id_answer": 2,
+            "answer": "presenta distorsione identicamente nulla"
+          },
+          {
+            "id_answer": 3,
+            "answer": "se la sua varianza è uguale al parametro"
+          }
+        ]
+      },
+      {
+        "id_question": "2",
+        "question": "Assegnati due stimatori T1  è più efficiente di T2 se:",
+        "paragraph": "Stimatore efficiente e minimo errore quadratico medio",
+        "titolo_videolezione": "Proprietà degli stimatori puntuali",
+        "correct_answer": "1",
+        "difficulty": "1",
+        "answers": [
+          {
+            "id_answer": 0,
+            "answer": "possiede l'MSE più piccolo"
+          },
+          {
+            "id_answer": 1,
+            "answer": "possiede L'MSE più grande"
+          },
+          {
+            "id_answer": 2,
+            "answer": "presenta varianza maggiore"
+          },
+          {
+            "id_answer": 3,
+            "answer": "presenta media  maggiore"
+          }
+        ]
+      },
+      {
+        "id_question": "3",
+        "question": "La proprietà di consistenza:",
+        "paragraph": "Stimatori consistenti e asintoticamente corretti",
+        "titolo_videolezione": "Proprietà degli stimatori puntuali",
+        "correct_answer": "2",
+        "difficulty": "1",
+        "answers": [
+          {
+            "id_answer": 0,
+            "answer": "appartiene alla classe delle proprietà esatte dello stimatore"
+          },
+          {
+            "id_answer": 1,
+            "answer": "appartiene alla classe delle proprietà asintotiche dello stimatore"
+          },
+          {
+            "id_answer": 2,
+            "answer": "non è valida per campioni reali"
+          },
+          {
+            "id_answer": 3,
+            "answer": "afferma che la sua precisione aumenta al diminuire della dimensione del campione"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson_id": 20,
+    "folder_id": 20,
+    "lesson_title": "Lezione 20",
+    "test_id": 62671,
+    "questions": [
+      {
+        "id_question": "1",
+        "question": "La media campionaria:",
+        "paragraph": "Stima puntuale dei parametri media e varianza di una popolazione",
+        "titolo_videolezione": "Stima puntuale dei parametri e metodo della massima verosimiglianza",
+        "correct_answer": "1",
+        "difficulty": "1",
+        "answers": [
+          {
+            "id_answer": 0,
+            "answer": "è uno stimatore distorto"
+          },
+          {
+            "id_answer": 1,
+            "answer": "è uno stimatore corretto"
+          },
+          {
+            "id_answer": 2,
+            "answer": "è uno stimatore corretto della media della popolazione solo per alcune distribuzione della popolazione"
+          },
+          {
+            "id_answer": 3,
+            "answer": "la media campionaria non è uno stimatore consistente della media della popolazione"
+          }
+        ]
+      },
+      {
+        "id_question": "2",
+        "question": "Nella stima puntuale della proporzione in una popolazione:",
+        "paragraph": "Stima puntuale della proporzione  di una popolazione",
+        "titolo_videolezione": "Stima puntuale dei parametri e metodo della massima verosimiglianza",
+        "correct_answer": "2",
+        "difficulty": "1",
+        "answers": [
+          {
+            "id_answer": 0,
+            "answer": "la media campionaria è uno stimatore corretto di π per ogni valore di π  tra -1 e 1"
+          },
+          {
+            "id_answer": 1,
+            "answer": "il carattere d'interesse può essere caratterizzato da una variabile bernulliana"
+          },
+          {
+            "id_answer": 2,
+            "answer": "Var(X ̅) =π(1−π)"
+          },
+          {
+            "id_answer": 3,
+            "answer": "la stima puntuale fornisce solo un'indicazione qualitativa della proporzione."
+          }
+        ]
+      },
+      {
+        "id_question": "3",
+        "question": "La funzione di verosimiglianza:",
+        "paragraph": "Stima puntuale mediante il metodo della massima verosimiglianza",
+        "titolo_videolezione": "Stima puntuale dei parametri e metodo della massima verosimiglianza",
+        "correct_answer": "4",
+        "difficulty": "1",
+        "answers": [
+          {
+            "id_answer": 0,
+            "answer": "non è utilizzata nella costruzione di stimatori puntuali"
+          },
+          {
+            "id_answer": 1,
+            "answer": "è una distribuzione di probabilita"
+          },
+          {
+            "id_answer": 2,
+            "answer": "è indicata come formalismo con Var"
+          },
+          {
+            "id_answer": 3,
+            "answer": "fornisce la probabilità di osservare un campione fissato al variare del parametro incognito"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson_id": 21,
+    "folder_id": 21,
+    "lesson_title": "Lezione 21",
+    "test_id": 62672,
+    "questions": [
+      {
+        "id_question": "1",
+        "question": "In un intervallo di confidenza:",
+        "paragraph": "Intervalli di confidenza per un parametro",
+        "titolo_videolezione": "Stima intervallare:introduzione",
+        "correct_answer": "1",
+        "difficulty": "1",
+        "answers": [
+          {
+            "id_answer": 0,
+            "answer": "gli estremi di un intervallo sono variabili casuali"
+          },
+          {
+            "id_answer": 1,
+            "answer": "una misura di accuratezza dello stimatore intervallo di confidenza  è l' MSE"
+          },
+          {
+            "id_answer": 2,
+            "answer": "i livelli di confidenza (1-α)comunemente utilizzati sono uguali a 0.80 e 0.85"
+          },
+          {
+            "id_answer": 3,
+            "answer": "non è necessario associare un livello di affidabilità"
+          }
+        ]
+      },
+      {
+        "id_question": "2",
+        "question": "Per costruire un intervallo di confidenza per la media:",
+        "paragraph": "Intervallo di confidenza per il valore atteso",
+        "titolo_videolezione": "Stima intervallare:introduzione",
+        "correct_answer": "2",
+        "difficulty": "1",
+        "answers": [
+          {
+            "id_answer": 0,
+            "answer": "bisogna considerare una dimensione del campione abbastanza grande"
+          },
+          {
+            "id_answer": 1,
+            "answer": "la popolazione del carattere X osservato può anche non essere Normale"
+          },
+          {
+            "id_answer": 2,
+            "answer": "è necessario utilizzare come misura di accuratezza dello stimatore intervallo di confidenza  l' MSE"
+          },
+          {
+            "id_answer": 3,
+            "answer": "non permettono di confrontare più distribuzioni diverse"
+          }
+        ]
+      },
+      {
+        "id_question": "3",
+        "question": "L'ampiezza dell'intervallo:",
+        "paragraph": "Ampiezza di un intervallo di confidenza",
+        "titolo_videolezione": "Stima intervallare:introduzione",
+        "correct_answer": "3",
+        "difficulty": "1",
+        "answers": [
+          {
+            "id_answer": 0,
+            "answer": "più è grande più fornisce informazione ed è utile nella stima intervallare"
+          },
+          {
+            "id_answer": 1,
+            "answer": "dipende solo dalla dimensione del campione"
+          },
+          {
+            "id_answer": 2,
+            "answer": "è generalmente maggiore nel caso in cui la varianza è nota"
+          },
+          {
+            "id_answer": 3,
+            "answer": "per la stima intervallare per il parametro media è uguale nel caso sia nota o non nota la varianza"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson_id": 22,
+    "folder_id": 22,
+    "lesson_title": "Lezione 22",
+    "test_id": 62695,
+    "questions": [
+      {
+        "id_question": "1",
+        "question": "Un intervallo di confidenza per la proporzione:",
+        "paragraph": "Intervallo di confidenza per una proporzione",
+        "titolo_videolezione": "Stima per intervalli",
+        "correct_answer": "2",
+        "difficulty": "1",
+        "answers": [
+          {
+            "id_answer": 0,
+            "answer": "la distribuzione del carattere può essere rappresentata tramite una variabile casuale di Poisson"
+          },
+          {
+            "id_answer": 1,
+            "answer": "è un metodo inferenziale di stima dei parametri"
+          },
+          {
+            "id_answer": 2,
+            "answer": "i livelli di confidenza (1-α)comunemente utilizzati sono uguali a 0.80 e 0.85"
+          },
+          {
+            "id_answer": 3,
+            "answer": "la media campionaria non rappresenta un buon stimatore del parametro π"
+          }
+        ]
+      },
+      {
+        "id_question": "2",
+        "question": "Un intervallo di confidenza per la varianza:",
+        "paragraph": "Intervallo di confidenza per la varianza",
+        "titolo_videolezione": "Stima per intervalli",
+        "correct_answer": "1",
+        "difficulty": "1",
+        "answers": [
+          {
+            "id_answer": 0,
+            "answer": "è un metodo inferenziale di stima dei parametri"
+          },
+          {
+            "id_answer": 1,
+            "answer": "non necessita della conoscenza di un opportuno stimatore e della distribuzione campionaria"
+          },
+          {
+            "id_answer": 2,
+            "answer": "la distribuzione del carattere può essere rappresentata tramite una variabile casuale Bernoulliana X"
+          },
+          {
+            "id_answer": 3,
+            "answer": "non è necessario associare un livello di affidabilità"
+          }
+        ]
+      },
+      {
+        "id_question": "3",
+        "question": "La determinazione della numerosità campionaria:",
+        "paragraph": "Determinazione della numerosità campionaria",
+        "titolo_videolezione": "Stima per intervalli",
+        "correct_answer": "4",
+        "difficulty": "1",
+        "answers": [
+          {
+            "id_answer": 0,
+            "answer": "non tiene conto della distribuzione del carattere in esame"
+          },
+          {
+            "id_answer": 1,
+            "answer": "non è utile nell'assicurare una certa precisione"
+          },
+          {
+            "id_answer": 2,
+            "answer": "non dipende inversamente dalla semi lunghezza dell'intervallo"
+          },
+          {
+            "id_answer": 3,
+            "answer": "consente di gestire meglio i tempi e le risorse nell'indagine statistiche"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson_id": 23,
+    "folder_id": 23,
+    "lesson_title": "Lezione 23",
+    "test_id": 62694,
+    "questions": []
+  },
+  {
+    "lesson_id": 25,
+    "folder_id": 25,
+    "lesson_title": "Lezione 25",
+    "test_id": 61714,
+    "questions": []
+  },
+  {
+    "lesson_id": 26,
+    "folder_id": 26,
+    "lesson_title": "Lezione 26",
+    "test_id": 62760,
+    "questions": [
+      {
+        "id_question": "1",
+        "question": "L'ipotesi nulla è:",
+        "paragraph": "Verifica delle ipotesi: introduzione",
+        "titolo_videolezione": "verifica delle ipotesi",
+        "correct_answer": "1",
+        "difficulty": "1",
+        "answers": [
+          {
+            "id_answer": 0,
+            "answer": "una ipotesi preesistente, ritenuta vera fino a prova contraria"
+          },
+          {
+            "id_answer": 1,
+            "answer": "è un'ipotesi che viene sempre rifiutata alla fine del test statistico"
+          },
+          {
+            "id_answer": 2,
+            "answer": "indicata con il simbolo H1"
+          },
+          {
+            "id_answer": 3,
+            "answer": "può essere solo semplice e mai composta"
+          }
+        ]
+      },
+      {
+        "id_question": "2",
+        "question": "Lo spazio parametrico:",
+        "paragraph": "Sistema di ipotesi",
+        "titolo_videolezione": "verifica delle ipotesi",
+        "correct_answer": "4",
+        "difficulty": "1",
+        "answers": [
+          {
+            "id_answer": 0,
+            "answer": "è il campione di dati osservato su cui si basa la stima del parametro"
+          },
+          {
+            "id_answer": 1,
+            "answer": "è individuato unicamente dalla partizione dell'ipotesi nulla"
+          },
+          {
+            "id_answer": 2,
+            "answer": "è l'insieme delle ipotesi formulate nel test statistico"
+          },
+          {
+            "id_answer": 3,
+            "answer": "è l'insieme di tutti i possibili valori che il parametro può assumere"
+          }
+        ]
+      },
+      {
+        "id_question": "3",
+        "question": "Una ipotesi bidirezionale:",
+        "paragraph": "Formulazione delle ipotesi",
+        "titolo_videolezione": "verifica delle ipotesi",
+        "correct_answer": "2",
+        "difficulty": "1",
+        "answers": [
+          {
+            "id_answer": 0,
+            "answer": "prevede che il paramentro analizzato possa solo aumentare  a un determinato valore"
+          },
+          {
+            "id_answer": 1,
+            "answer": "è un'ipotesi alternativa che verifica se esiste una differenza, senza specificare se il parametro è maggiore o minore rispetto all'ipotesi nulla"
+          },
+          {
+            "id_answer": 2,
+            "answer": "è una ipotesi semplice"
+          },
+          {
+            "id_answer": 3,
+            "answer": "si utilizza solo quando il campione è molto grande"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson_id": 27,
+    "folder_id": 27,
+    "lesson_title": "Lezione 27",
+    "test_id": 62761,
+    "questions": [
+      {
+        "id_question": "1",
+        "question": "Un test statistico:",
+        "paragraph": "Test statistico",
+        "titolo_videolezione": "Regole di decisione",
+        "correct_answer": "1",
+        "difficulty": "1",
+        "answers": [
+          {
+            "id_answer": 0,
+            "answer": "è una regola che permette di discriminare i campioni che portano all'accettazione dell'ipotesi nulla"
+          },
+          {
+            "id_answer": 1,
+            "answer": "calcolare la probabilità che l'ipotesi nulla sia vera"
+          },
+          {
+            "id_answer": 2,
+            "answer": "misura la media dei dati senza fare ipotesi"
+          },
+          {
+            "id_answer": 3,
+            "answer": "calcolare la probabilità che l'ipotesi alternativa  sia vera"
+          }
+        ]
+      },
+      {
+        "id_question": "2",
+        "question": "Cos'è la regione di accettazione in un test statistico:",
+        "paragraph": "Regione di accettazione e regione di rifiuto",
+        "titolo_videolezione": "Regole di decisione",
+        "correct_answer": "3",
+        "difficulty": "1",
+        "answers": [
+          {
+            "id_answer": 0,
+            "answer": "è la zona in cui si trova il valore critico del test"
+          },
+          {
+            "id_answer": 1,
+            "answer": "è l'insieme dei valori della statistica test che portano a rifiutare l'ipotesi nulla"
+          },
+          {
+            "id_answer": 2,
+            "answer": "è l'insieme dei valori della statistica test per cui si accetta l'ipotesi nulla"
+          },
+          {
+            "id_answer": 3,
+            "answer": "l'insieme dei valori della statistica-test per cui si rifiuta l'ipotesi nulla"
+          }
+        ]
+      },
+      {
+        "id_question": "3",
+        "question": "Il p-value:",
+        "paragraph": "Approccio basato sul p-value",
+        "titolo_videolezione": "Regole di decisione",
+        "correct_answer": "2",
+        "difficulty": "1",
+        "answers": [
+          {
+            "id_answer": 0,
+            "answer": "è la probabilità di ottenere un valore della statistica-test uguale o più estremo di quello osservato, supponendo vera l'ipotesi nulla"
+          },
+          {
+            "id_answer": 1,
+            "answer": "è il livello di significatività scelto a priori prima di eseguire il test"
+          },
+          {
+            "id_answer": 2,
+            "answer": "ha un valore compreso tra il valore critico e il livello di significatività"
+          },
+          {
+            "id_answer": 3,
+            "answer": "è la probabilità che l'ipotesi nulla sia vera"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson_id": 28,
+    "folder_id": 28,
+    "lesson_title": "Lezione 28",
+    "test_id": 62782,
+    "questions": [
+      {
+        "id_question": "1",
+        "question": "L'errore di primo tipo in un test statistico:",
+        "paragraph": "Gli errori del primo e del secondo tipo",
+        "titolo_videolezione": "Errori nella procedura di verifica",
+        "correct_answer": "3",
+        "difficulty": "1",
+        "answers": [
+          {
+            "id_answer": 0,
+            "answer": "è l'errore commesso quando si accetta l'ipotesi nulla anche se è falsa"
+          },
+          {
+            "id_answer": 1,
+            "answer": "è la probabilità che l'ipotesi alternativa sia vera"
+          },
+          {
+            "id_answer": 2,
+            "answer": "è l'errore commesso quando si rifiuta l'ipotesi nulla anche se è vera."
+          },
+          {
+            "id_answer": 3,
+            "answer": "è la probabilità di accettare l'ipotesi alternativa quando è falsa"
+          }
+        ]
+      },
+      {
+        "id_question": "2",
+        "question": "La prima fase nella procedura della verifica delle ipotesi:",
+        "paragraph": "Procedura verifica delle ipotesi",
+        "titolo_videolezione": "Errori nella procedura di verifica",
+        "correct_answer": "4",
+        "difficulty": "1",
+        "answers": [
+          {
+            "id_answer": 0,
+            "answer": "riguarda la definizione della regione di rifiuto"
+          },
+          {
+            "id_answer": 1,
+            "answer": "la selezione del campione"
+          },
+          {
+            "id_answer": 2,
+            "answer": "la scelta della statistica-test"
+          },
+          {
+            "id_answer": 3,
+            "answer": "definizione del sistema di ipotesi"
+          }
+        ]
+      },
+      {
+        "id_question": "3",
+        "question": "Indicare l'affermazione che descrive correttamente una delle fasi della verifica delle ipotesi:",
+        "paragraph": "Riepilogo",
+        "titolo_videolezione": "Errori nella procedura di verifica",
+        "correct_answer": "1",
+        "difficulty": "1",
+        "answers": [
+          {
+            "id_answer": 0,
+            "answer": "la regione di rifiuto si definisce prima dell'estrazione del campione"
+          },
+          {
+            "id_answer": 1,
+            "answer": "il livello di significatività α si stabilisce solo dopo aver calcolato la statistica-test"
+          },
+          {
+            "id_answer": 2,
+            "answer": "la decisione finale viene presa prima di calcolare la statistica-test"
+          },
+          {
+            "id_answer": 3,
+            "answer": "la scelta della statistica-test dipende dai risultati ottenuti dal campione"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson_id": 29,
+    "folder_id": 29,
+    "lesson_title": "Lezione 29",
+    "test_id": 62784,
+    "questions": [
+      {
+        "id_question": "1",
+        "question": "Nel caso di una distribuzione Normale con varianza nota pari a 150 e un campione osservato di dimensione pari a 20 con una media campionaria pari a 180, si vuole verificare ad un livello di significatività dello 0,05 che la media della popolazione sia maggiore di 175. Quindi la statistica test Z risulta:",
+        "paragraph": "Test per la media",
+        "titolo_videolezione": "Test per medie, proporzioni e varianze",
+        "correct_answer": "2",
+        "difficulty": "2",
+        "answers": [
+          {
+            "id_answer": 0,
+            "answer": "0,667"
+          },
+          {
+            "id_answer": 1,
+            "answer": "1,826"
+          },
+          {
+            "id_answer": 2,
+            "answer": "0,14"
+          },
+          {
+            "id_answer": 3,
+            "answer": "(-1,826)"
+          }
+        ]
+      },
+      {
+        "id_question": "2",
+        "question": "Nel caso di una variabile aleatoria bernoulliana si vuole verificare che la proporzione sia minome di 0,55. Sapendo che il campione osservato è di dimensione pari a 500 e lo stimatore della proporzione è pari a 0,45 la statistica test Z risulta:",
+        "paragraph": "Test per una proporzione",
+        "titolo_videolezione": "Test per medie, proporzioni e varianze",
+        "correct_answer": "4",
+        "difficulty": "2",
+        "answers": [
+          {
+            "id_answer": 0,
+            "answer": "0,0038"
+          },
+          {
+            "id_answer": 1,
+            "answer": "0,0196"
+          },
+          {
+            "id_answer": 2,
+            "answer": "(-3,-0151)"
+          },
+          {
+            "id_answer": 3,
+            "answer": "(-0,0196)"
+          }
+        ]
+      },
+      {
+        "id_question": "3",
+        "question": "Nel caso di una distribuzione Normale si vuole verificare che la varianza della popolazinoe sia pari a 32,5. Supponendo un campione osservato di dimensione pari n=51 e un valore dello stimatore corretto della varianza pari a 30,  la statistica test risulta:",
+        "paragraph": "Test per la varianza",
+        "titolo_videolezione": "Test per medie, proporzioni e varianze",
+        "correct_answer": "3",
+        "difficulty": "2",
+        "answers": [
+          {
+            "id_answer": 0,
+            "answer": "54,167"
+          },
+          {
+            "id_answer": 1,
+            "answer": "47,077"
+          },
+          {
+            "id_answer": 2,
+            "answer": "46,15"
+          },
+          {
+            "id_answer": 3,
+            "answer": "8,426"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson_id": 30,
+    "folder_id": 30,
+    "lesson_title": "Lezione 30",
+    "test_id": 62813,
+    "questions": [
+      {
+        "id_question": "1",
+        "question": "Secondo la definizione l'ANOVA è:",
+        "paragraph": "Anova: obiettivi e definizione",
+        "titolo_videolezione": "ANOVA",
+        "correct_answer": "1",
+        "difficulty": "1",
+        "answers": [
+          {
+            "id_answer": 0,
+            "answer": "un metodo per verificare l'ipotesi che i campioni osservati provengano da popolazioni con stesso valore medio è noto come ANOVA (Analysis of Variance)"
+          },
+          {
+            "id_answer": 1,
+            "answer": "un metodo per verificare l'ipotesi che i campioni osservati provengano da popolazioni con uguale varianza"
+          },
+          {
+            "id_answer": 2,
+            "answer": "un metodo per verificare l'ipotesi che i campioni osservati provengano da popolazioni con valori medi differenze"
+          },
+          {
+            "id_answer": 3,
+            "answer": "un metodo per verificare l'ipotesi che diverse popolazioni presentino diversa varianza"
+          }
+        ]
+      },
+      {
+        "id_question": "2",
+        "question": "Sotto l'ipotesi nulla la statistica test F si distribuisce:",
+        "paragraph": "Statistica test per l'anova one-way",
+        "titolo_videolezione": "ANOVA",
+        "correct_answer": "3",
+        "difficulty": "2",
+        "answers": [
+          {
+            "id_answer": 0,
+            "answer": "come una f di Fisher con G e n gradi di libertà dove G rappresenta i campioni"
+          },
+          {
+            "id_answer": 1,
+            "answer": "come una f di Fisher con G-1 e G-n gradi di libertà dove G rappresentano i campioni"
+          },
+          {
+            "id_answer": 2,
+            "answer": "come una f di Fisher con G-1 e n-G gradi di libertà dove G rappresentano i campioni"
+          },
+          {
+            "id_answer": 3,
+            "answer": "come una Chi-quadrato  G gradi di libertà dove G rappresentano i campioni"
+          }
+        ]
+      },
+      {
+        "id_question": "3",
+        "question": "Un agenzia di viaggi  vuole valutare la soddisfazione dei clienti di tre compagnie aeree, A e B e C. Vengono estratti per ciascuna compagnia 10 clienti (numerosità totale pari a 30). Ad ogni campione viene attribuita una compagnia aerea e viene calcolata la soddisfazione media di un turista. Sapendo che la Devianza Interna ai campioni è pari a 200 e la Devianza Tra i Campioni è pari a 120, il valore della statistica test per l'ANOVA risulta essere:",
+        "paragraph": "Riepilogo",
+        "titolo_videolezione": "ANOVA",
+        "correct_answer": "2",
+        "difficulty": "3",
+        "answers": [
+          {
+            "id_answer": 0,
+            "answer": "0,12"
+          },
+          {
+            "id_answer": 1,
+            "answer": "8,1"
+          },
+          {
+            "id_answer": 2,
+            "answer": "0,6"
+          },
+          {
+            "id_answer": 3,
+            "answer": "7,407"
+          }
+        ]
+      }
+    ]
+  }
+]

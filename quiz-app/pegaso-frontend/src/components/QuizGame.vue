@@ -62,6 +62,9 @@ defineEmits(["answer", "prev", "next"]);
                           : 'bg-bg-input border-transparent hover:border-primary hover:bg-bg-4 text-text',
                 ]"
             >
+                <div v-if="opzione.img">
+                    <img :src="opzione.img">
+                </div>
                 {{ opzione.testo }}
             </button>
         </div>

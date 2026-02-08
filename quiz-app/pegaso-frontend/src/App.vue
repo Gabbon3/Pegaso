@@ -43,6 +43,14 @@ const currentQuestion = computed(() => {
         imageUrl = imgMatch[1]; 
         text = text.replace(/<img[^>]*>/g, "");
     }
+    // itero sulle opzioni per beccare le immagini e isolarle
+    for (const opzione of rawQuestion.opzioni) {
+        const imgMatch = opzione.testo.match(/src="([^"]+)"/);
+        if (imgMatch) {
+            opzione.img = imgMatch[1];
+            opzione.testo = opzione.testo.replace(/<img[^>]*>/g, "");
+        }
+    }
     return { ...rawQuestion, domandaClean: text, imageUrl: imageUrl };
 });
 
