@@ -122,6 +122,7 @@ def migrate_json_to_db(json_file, nome_materia):
 # migrate_json_to_db('C:\\Users\\g2004\\Desktop\\Pegaso\\☑️ Architettura Dei Calcolatori\\quiz_architettura_dei_calcolatori.json', 'Architettura dei Calcolatori')
 # migrate_json_to_db('C:\\Users\\g2004\\Desktop\\Pegaso\\Programmazione\\quiz_programmazione.json', 'Programmazione')
 # migrate_json_to_db('C:\\Users\\g2004\\Desktop\\Pegaso\\Probabilita e Statistica\\quiz_statistica_probabilita.json', 'Calcolo Probabilita e Statistica')
+migrate_json_to_db('C:\\Users\\g2004\\Desktop\\Pegaso\\Algebra\\quiz_algebra.json', 'Algebra')
 
 # Migrazioni PC 2
 # migrate_json_to_db('C:\\Users\\u1617\\Desktop\\Pegaso\\☑️ Ingegneria del Software\\quiz_ingegneria_software.json', 'Ingegneria del Software')
