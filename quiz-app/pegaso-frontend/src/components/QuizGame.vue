@@ -30,10 +30,10 @@ defineEmits(["answer", "prev", "next"]);
             ></div>
         </div>
         <div class="space-y-2">
-            <div 
+            <!-- <div 
                 class="text-s text-text-4"
                 v-text="question.paragrafo"
-            ></div>
+            ></div> -->
             <div class="space-y-4">
                 <div v-if="question.imageUrl" class="flex justify-center">
                     <img :src="question.imageUrl">
