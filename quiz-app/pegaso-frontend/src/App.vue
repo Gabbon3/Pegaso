@@ -1,12 +1,14 @@
 <script setup>
 import { ref, onMounted, computed } from "vue";
 
-// Importiamo i nostri nuovi componenti
+// Componenti
 import QuizMenu from "./components/QuizMenu.vue";
 import QuizGame from "./components/QuizGame.vue";
 import QuizResults from "./components/QuizResults.vue";
 import api from "./api";
 import QuizChapters from "./components/QuizChapters.vue";
+// Utils
+import { quizUtils } from "./utils/quiz.utils";
 
 // --- STATO ---
 const gameState = ref("menu"); 
@@ -37,18 +39,16 @@ const currentQuestion = computed(() => {
     if (!quizData.value.length) return {};
     const rawQuestion = quizData.value[currentQuestionIndex.value];
     let text = rawQuestion.domanda;
-    let imageUrl = null;
-    const imgMatch = text.match(/src="([^"]+)"/);
-    if (imgMatch) {
-        imageUrl = imgMatch[1]; 
-        text = text.replace(/<img[^>]*>/g, "");
+    let imageUrl = quizUtils.getImageUrl(text)
+    if (imageUrl) {
+        text = quizUtils.cleanText(text);
     }
     // itero sulle opzioni per beccare le immagini e isolarle
     for (const opzione of rawQuestion.opzioni) {
-        const imgMatch = opzione.testo.match(/src="([^"]+)"/);
+        const imgMatch = quizUtils.getImageUrl(opzione.testo);
         if (imgMatch) {
-            opzione.img = imgMatch[1];
-            opzione.testo = opzione.testo.replace(/<img[^>]*>/g, "");
+            opzione.img = imgMatch;
+            opzione.testo = quizUtils.cleanText(opzione.testo);
         }
     }
     return { ...rawQuestion, domandaClean: text, imageUrl: imageUrl };
@@ -200,6 +200,8 @@ const viewChapters = async () => {
                 v-else-if="gameState === 'results'"
                 :score="score"
                 :total="quizData.length"
+                :quiz-data="quizData"
+                :user-answers="userAnswers"
                 @reset="resetQuiz"
             />
 
